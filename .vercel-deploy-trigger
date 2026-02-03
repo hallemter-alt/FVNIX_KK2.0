@@ -1,0 +1,9 @@
+# Force Vercel Deployment
+
+This file exists solely to trigger a fresh Vercel deployment with the latest code.
+
+**Latest commit with client-side rendering fix**: e1d176c
+**Current commit**: fbe40b3
+
+All client-side rendering fixes are in place.
+
