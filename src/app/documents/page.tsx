@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import DocumentsFilters from "@/components/documents/DocumentsFilters";
 import { getAllProducts, getDocumentOptions, getDocuments } from "@/lib/dataService";
@@ -13,7 +14,7 @@ function parseList(v: string | null) {
   return v.split(",").map((s) => s.trim()).filter(Boolean);
 }
 
-export default function DocumentsPage() {
+function DocumentsContent() {
   const searchParams = useSearchParams();
   const allProducts = getAllProducts();
   const { types, productSlugs, lotNos } = getDocumentOptions();
@@ -81,5 +82,24 @@ export default function DocumentsPage() {
         </div>
       )}
     </main>
+  );
+}
+
+// Loading fallback component
+function DocumentsLoading() {
+  return (
+    <main className="mx-auto max-w-6xl p-6">
+      <h1 className="text-3xl font-semibold">Document Center</h1>
+      <p className="mt-2 text-sm opacity-80">Loading...</p>
+    </main>
+  );
+}
+
+// Main page component with Suspense boundary
+export default function DocumentsPage() {
+  return (
+    <Suspense fallback={<DocumentsLoading />}>
+      <DocumentsContent />
+    </Suspense>
   );
 }

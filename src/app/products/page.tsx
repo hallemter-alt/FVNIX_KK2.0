@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Filters from "@/components/products/Filters";
@@ -12,7 +13,7 @@ function normalize(s: string) {
   return (s || "").trim().toLowerCase();
 }
 
-export default function ProductsPage() {
+function ProductsContent() {
   const searchParams = useSearchParams();
   const all = getAllProducts();
 
@@ -116,5 +117,24 @@ export default function ProductsPage() {
         </div>
       )}
     </main>
+  );
+}
+
+// Loading fallback component
+function ProductsLoading() {
+  return (
+    <main className="mx-auto max-w-6xl p-6">
+      <h1 className="text-3xl font-semibold">Essential Oils</h1>
+      <p className="mt-2 text-sm opacity-80">Loading...</p>
+    </main>
+  );
+}
+
+// Main page component with Suspense boundary
+export default function ProductsPage() {
+  return (
+    <Suspense fallback={<ProductsLoading />}>
+      <ProductsContent />
+    </Suspense>
   );
 }
