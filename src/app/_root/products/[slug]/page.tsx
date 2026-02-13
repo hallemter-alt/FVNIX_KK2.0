@@ -1,7 +1,8 @@
 import { getProductBySlug, getLotsByProductSlug } from "@/lib/dataService";
 
-export default function ProductDetail({ params }: { params: { slug: string } }) {
-  const p = getProductBySlug(params.slug);
+export default async function ProductDetail({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const p = getProductBySlug(slug);
   if (!p) return <main className="p-6">Not Found</main>;
 
   const lots = getLotsByProductSlug(p.slug);
