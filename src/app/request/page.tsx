@@ -1,9 +1,10 @@
 "use client";
 
+import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 
-export default function RequestPage() {
+function RequestContent() {
   const sp = useSearchParams();
   const type = sp.get("type") || "quote";
   const product = sp.get("product") || "";
@@ -36,5 +37,24 @@ export default function RequestPage() {
         {ok && <div className="text-sm opacity-80">{ok}</div>}
       </div>
     </main>
+  );
+}
+
+// Loading fallback component
+function RequestLoading() {
+  return (
+    <main className="mx-auto max-w-xl p-6">
+      <h1 className="text-3xl font-semibold">Request</h1>
+      <p className="mt-2 text-sm opacity-80">Loading...</p>
+    </main>
+  );
+}
+
+// Main page component with Suspense boundary
+export default function RequestPage() {
+  return (
+    <Suspense fallback={<RequestLoading />}>
+      <RequestContent />
+    </Suspense>
   );
 }
