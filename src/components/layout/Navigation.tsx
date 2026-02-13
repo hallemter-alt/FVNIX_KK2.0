@@ -3,12 +3,14 @@
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const params = useParams();
   const locale = (params?.locale as string) || "ja";
+  const t = useTranslations("nav");
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
@@ -20,35 +22,35 @@ export default function Navigation() {
               FVNIX
             </span>
             <span className="text-sm text-gray-600 hidden sm:inline">
-              Premium Natural Ingredients
+              {t("tagline")}
             </span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             <Link href={`/${locale}`} className="text-gray-700 hover:text-green-600 font-medium transition-colors">
-              Home
+              {t("home")}
             </Link>
             <Link href={`/${locale}/about`} className="text-gray-700 hover:text-green-600 font-medium transition-colors">
-              About Us
+              {t("about")}
             </Link>
             <Link href={`/${locale}/products`} className="text-gray-700 hover:text-green-600 font-medium transition-colors">
-              Products
+              {t("products")}
             </Link>
             <Link href={`/${locale}/documents`} className="text-gray-700 hover:text-green-600 font-medium transition-colors">
-              Documents
+              {t("documents")}
             </Link>
             <Link href={`/${locale}/certifications`} className="text-gray-700 hover:text-green-600 font-medium transition-colors">
-              Certifications
+              {t("certifications")}
             </Link>
             <Link href={`/${locale}/market-position`} className="text-gray-700 hover:text-green-600 font-medium transition-colors">
-              Market Position
+              {t("marketPosition")}
             </Link>
             <Link 
               href={`/${locale}/request`}
               className="rounded-lg bg-gradient-to-r from-green-600 to-green-700 px-4 py-2 text-white font-semibold hover:from-green-700 hover:to-green-800 transition-all shadow-md"
             >
-              Contact Us
+              {t("contact")}
             </Link>
             <LanguageSwitcher currentLocale={locale} />
           </div>
@@ -80,49 +82,49 @@ export default function Navigation() {
                 className="text-gray-700 hover:text-green-600 font-medium transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Home
+                {t("home")}
               </Link>
               <Link 
                 href={`/${locale}/about`}
                 className="text-gray-700 hover:text-green-600 font-medium transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                About Us
+                {t("about")}
               </Link>
               <Link 
                 href={`/${locale}/products`}
                 className="text-gray-700 hover:text-green-600 font-medium transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Products
+                {t("products")}
               </Link>
               <Link 
                 href={`/${locale}/documents`}
                 className="text-gray-700 hover:text-green-600 font-medium transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Documents
+                {t("documents")}
               </Link>
               <Link 
                 href={`/${locale}/certifications`}
                 className="text-gray-700 hover:text-green-600 font-medium transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Certifications
+                {t("certifications")}
               </Link>
               <Link 
                 href={`/${locale}/market-position`}
                 className="text-gray-700 hover:text-green-600 font-medium transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Market Position
+                {t("marketPosition")}
               </Link>
               <Link 
                 href={`/${locale}/request`}
                 className="rounded-lg bg-gradient-to-r from-green-600 to-green-700 px-4 py-3 text-white font-semibold hover:from-green-700 hover:to-green-800 transition-all shadow-md text-center mt-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Contact Us
+                {t("contact")}
               </Link>
               <div className="pt-3 border-t border-gray-200">
                 <LanguageSwitcher currentLocale={locale} />

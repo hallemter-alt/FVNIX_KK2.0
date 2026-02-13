@@ -1,5 +1,15 @@
 {
   "common": {
     "lang": { "ja": "日本語", "en": "English", "zhHant": "繁體中文" }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "documents": "Documents",
+    "certifications": "Certifications",
+    "marketPosition": "Market Position",
+    "contact": "Contact Us",
+    "tagline": "Premium Natural Ingredients"
   }
 }

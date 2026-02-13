@@ -1,5 +1,15 @@
 {
   "common": {
     "lang": { "ja": "日本語", "en": "English", "zhHant": "繁體中文" }
+  },
+  "nav": {
+    "home": "ホーム",
+    "about": "私たちについて",
+    "products": "製品",
+    "documents": "ドキュメント",
+    "certifications": "認証",
+    "marketPosition": "市場ポジション",
+    "contact": "お問い合わせ",
+    "tagline": "プレミアム天然成分"
   }
 }
