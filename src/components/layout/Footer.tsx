@@ -1,6 +1,12 @@
+"use client";
+
 import Link from "next/link";
+import { useParams } from "next/navigation";
 
 export default function Footer() {
+  const params = useParams();
+  const locale = (params?.locale as string) || "ja";
+
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-6 py-12">
@@ -25,32 +31,32 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-sm hover:text-green-400 transition-colors">
+                <Link href={`/${locale}/about`} className="text-sm hover:text-green-400 transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/products" className="text-sm hover:text-green-400 transition-colors">
+                <Link href={`/${locale}/products`} className="text-sm hover:text-green-400 transition-colors">
                   Products
                 </Link>
               </li>
               <li>
-                <Link href="/documents" className="text-sm hover:text-green-400 transition-colors">
+                <Link href={`/${locale}/documents`} className="text-sm hover:text-green-400 transition-colors">
                   Documents
                 </Link>
               </li>
               <li>
-                <Link href="/certifications" className="text-sm hover:text-green-400 transition-colors">
+                <Link href={`/${locale}/certifications`} className="text-sm hover:text-green-400 transition-colors">
                   Certifications
                 </Link>
               </li>
               <li>
-                <Link href="/market-position" className="text-sm hover:text-green-400 transition-colors">
+                <Link href={`/${locale}/market-position`} className="text-sm hover:text-green-400 transition-colors">
                   Market Position
                 </Link>
               </li>
               <li>
-                <Link href="/request" className="text-sm hover:text-green-400 transition-colors">
+                <Link href={`/${locale}/request`} className="text-sm hover:text-green-400 transition-colors">
                   Contact & Request
                 </Link>
               </li>
