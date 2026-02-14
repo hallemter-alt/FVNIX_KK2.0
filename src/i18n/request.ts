@@ -10,8 +10,22 @@ export default getRequestConfig(async ({requestLocale}) => {
     locale = 'ja';
   }
 
+  // Use static imports with @/ alias for Turbopack compatibility
+  const messages = await (async () => {
+    switch (locale) {
+      case 'ja':
+        return (await import('@/messages/ja.json')).default;
+      case 'en':
+        return (await import('@/messages/en.json')).default;
+      case 'zh-hant':
+        return (await import('@/messages/zh-hant.json')).default;
+      default:
+        return (await import('@/messages/ja.json')).default;
+    }
+  })();
+
   return {
     locale,
-    messages: (await import(`../../messages/${locale}.json`)).default
+    messages
   };
 });
