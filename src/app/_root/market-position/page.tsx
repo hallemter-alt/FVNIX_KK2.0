@@ -1,8 +1,8 @@
 export default function MarketPositionPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <main className="min-h-screen bg-natural-light texture-linen">
       {/* Hero Section */}
-      <section className="relative py-20 px-6 bg-gradient-to-r from-purple-600 to-blue-600 text-white">
+      <section className="relative py-20 px-6 bg-natural-taupe texture-wood text-gray-900">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6">Market Position & Performance</h1>
           <p className="text-2xl opacity-90">
@@ -20,7 +20,7 @@ export default function MarketPositionPage() {
           
           <div className="grid md:grid-cols-3 gap-8">
             {/* Eucalyptus Oil */}
-            <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-2xl shadow-2xl p-10 text-center transform hover:scale-105 transition-transform">
+            <div className="bg-natural-warm texture-woven rounded-2xl shadow-2xl p-10 text-center transform hover:scale-105 transition-transform border border-stone-200">
               <div className="text-6xl mb-4">🥇</div>
               <h3 className="text-3xl font-bold text-yellow-900 mb-3">
                 GLOBAL NO.1

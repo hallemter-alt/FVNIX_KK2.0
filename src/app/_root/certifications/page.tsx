@@ -1,8 +1,8 @@
 export default function CertificationsPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <main className="min-h-screen bg-natural-light texture-linen">
       {/* Hero Section */}
-      <section className="relative py-20 px-6 bg-gradient-to-r from-blue-600 to-green-600 text-white">
+      <section className="relative py-20 px-6 bg-natural-taupe texture-wood text-gray-900">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6">Quality Assurance & Sustainability</h1>
           <p className="text-2xl opacity-90">
@@ -20,56 +20,56 @@ export default function CertificationsPage() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* KOSHER */}
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center">
+            <div className="bg-natural-medium texture-woven rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center border border-stone-200">
               <div className="text-5xl mb-4">✡</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">KOSHER</h3>
               <p className="text-sm text-gray-600">Kosher Food Certification</p>
             </div>
 
             {/* REACH */}
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center">
+            <div className="bg-natural-medium texture-woven rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center border border-stone-200">
               <div className="text-5xl mb-4">🇪🇺</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">REACH</h3>
               <p className="text-sm text-gray-600">EU Chemical Substance Registration</p>
             </div>
 
             {/* HACCP */}
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center">
+            <div className="bg-natural-medium texture-woven rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center border border-stone-200">
               <div className="text-5xl mb-4">🛡️</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">HACCP</h3>
               <p className="text-sm text-gray-600">Food Safety Management System</p>
             </div>
 
             {/* cGMP */}
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center">
+            <div className="bg-natural-medium texture-woven rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center border border-stone-200">
               <div className="text-5xl mb-4">💊</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">cGMP</h3>
               <p className="text-sm text-gray-600">Pharmaceutical Good Manufacturing Practice</p>
             </div>
 
             {/* ISO 9001 */}
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center">
+            <div className="bg-natural-medium texture-woven rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center border border-stone-200">
               <div className="text-5xl mb-4">📋</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">ISO 9001</h3>
               <p className="text-sm text-gray-600">Quality Management System</p>
             </div>
 
             {/* Food Production License */}
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center">
+            <div className="bg-natural-medium texture-woven rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center border border-stone-200">
               <div className="text-5xl mb-4">🏭</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Food License</h3>
               <p className="text-sm text-gray-600">Food Production Permit</p>
             </div>
 
             {/* Medicinal Eucalyptus GMP */}
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center">
+            <div className="bg-natural-medium texture-woven rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center border border-stone-200">
               <div className="text-5xl mb-4">🌿</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Medicinal GMP</h3>
               <p className="text-sm text-gray-600">Eucalyptus Oil Pharmaceutical Standard</p>
             </div>
 
             {/* Biopesticide License */}
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center">
+            <div className="bg-natural-medium texture-woven rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center border border-stone-200">
               <div className="text-5xl mb-4">🌾</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Biopesticide</h3>
               <p className="text-sm text-gray-600">Biological Pesticide License</p>
