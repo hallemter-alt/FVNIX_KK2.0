@@ -71,11 +71,13 @@ function ProductsContent() {
   });
 
   return (
-    <main className="mx-auto max-w-6xl p-6">
-      <h1 className="text-3xl font-semibold">Essential Oils</h1>
-      <p className="mt-2 text-sm opacity-80">
-        Filter by series / origin / extraction / tags (multi-select). Shareable URLs.
-      </p>
+    <main className="mx-auto max-w-6xl p-6 min-h-screen bg-natural-light texture-linen">
+      <div className="bg-natural-medium/80 texture-ceramic rounded-xl p-8 mb-8 border border-stone-200">
+        <h1 className="text-3xl font-semibold text-gray-900">Essential Oils</h1>
+        <p className="mt-2 text-sm text-gray-700 opacity-90">
+          Filter by series / origin / extraction / tags (multi-select). Shareable URLs.
+        </p>
+      </div>
 
       <div className="mt-6">
         <Filters
@@ -92,16 +94,16 @@ function ProductsContent() {
 
       <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {filtered.map((p) => (
-          <Link key={p.slug} href={`/products/${p.slug}`} className="rounded-2xl border p-4 hover:shadow">
-            <div className="text-xs opacity-70">{p.series || "—"}</div>
-            <div className="mt-1 text-lg font-medium">{p.name.en || p.name.zh}</div>
-            <div className="text-sm opacity-70">{p.latinName}</div>
-            <div className="mt-3 text-xs opacity-70">{p.origin} · {p.altitude} · {p.extraction}</div>
+          <Link key={p.slug} href={`/products/${p.slug}`} className="rounded-2xl bg-natural-medium texture-woven border border-stone-200 p-4 hover:shadow-lg transition-shadow">
+            <div className="text-xs text-gray-600">{p.series || "—"}</div>
+            <div className="mt-1 text-lg font-medium text-gray-900">{p.name.en || p.name.zh}</div>
+            <div className="text-sm text-gray-600">{p.latinName}</div>
+            <div className="mt-3 text-xs text-gray-600">{p.origin} · {p.altitude} · {p.extraction}</div>
 
             {p.tags?.length ? (
               <div className="mt-3 flex flex-wrap gap-2">
                 {p.tags.slice(0, 4).map((t) => (
-                  <span key={t} className="rounded-full border px-2 py-1 text-xs opacity-80">
+                  <span key={t} className="rounded-full bg-natural-light border border-stone-300 px-2 py-1 text-xs text-gray-700">
                     {t}
                   </span>
                 ))}
@@ -112,7 +114,7 @@ function ProductsContent() {
       </div>
 
       {filtered.length === 0 && (
-        <div className="mt-10 rounded-2xl border p-6 text-sm opacity-80">
+        <div className="mt-10 rounded-2xl bg-natural-warm texture-stone border border-stone-200 p-6 text-sm text-gray-700">
           No results. Try clearing filters or changing keywords.
         </div>
       )}

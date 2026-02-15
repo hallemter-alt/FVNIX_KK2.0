@@ -1,8 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Natural Earth Color Palette */
+  --color-oatmeal: #F5F1E8;
+  --color-linen: #FDFBF7;
+  --color-natural-beige: #E6DFD1;
+  --color-ameland: #D9D0C1;
+  --color-taupe: #C8BFB0;
+  --color-stone-gray: #A8A299;
+  --color-warm-brown: #9A826F;
+  --color-essen-grijs: #8F8B82;
+  --color-dark-wood: #7C6A58;
+  
+  /* Main Variables */
+  --background: var(--color-linen);
+  --foreground: #2C2418;
+  --background-secondary: var(--color-oatmeal);
+  --text-muted: #6B5D4F;
+  --border-color: var(--color-taupe);
 }
 
 @theme inline {
@@ -14,13 +29,142 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #2C2418;
+    --foreground: #F5F1E8;
+    --background-secondary: #3A332A;
+    --text-muted: #A8A299;
+    --border-color: #6B5D4F;
   }
 }
 
+/* Natural Texture Backgrounds */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(200, 191, 176, 0.03) 2px,
+      rgba(200, 191, 176, 0.03) 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(200, 191, 176, 0.03) 2px,
+      rgba(200, 191, 176, 0.03) 4px
+    );
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* Linen Texture Utility Class */
+.texture-linen {
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 2px,
+      rgba(168, 162, 153, 0.04) 2px,
+      rgba(168, 162, 153, 0.04) 4px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 2px,
+      rgba(168, 162, 153, 0.04) 2px,
+      rgba(168, 162, 153, 0.04) 4px
+    );
+}
+
+/* Stone Texture */
+.texture-stone {
+  background-image: 
+    linear-gradient(
+      135deg,
+      rgba(168, 162, 153, 0.05) 0%,
+      transparent 50%,
+      rgba(143, 139, 130, 0.05) 100%
+    );
+}
+
+/* Wood Grain Texture */
+.texture-wood {
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 3px,
+      rgba(124, 106, 88, 0.03) 3px,
+      rgba(124, 106, 88, 0.03) 6px
+    );
+}
+
+/* Ceramic/Matte Finish */
+.texture-ceramic {
+  background-image: 
+    radial-gradient(
+      circle at 20% 50%,
+      rgba(245, 241, 232, 0.3) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 50%,
+      rgba(230, 223, 209, 0.3) 0%,
+      transparent 50%
+    );
+}
+
+/* Woven/Canvas Texture */
+.texture-woven {
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      rgba(200, 191, 176, 0.08) 0px,
+      transparent 1px,
+      transparent 2px,
+      rgba(200, 191, 176, 0.08) 3px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(217, 208, 193, 0.08) 0px,
+      transparent 1px,
+      transparent 2px,
+      rgba(217, 208, 193, 0.08) 3px
+    );
+}
+
+/* Page Background Variations */
+.bg-natural-light {
+  background-color: var(--color-linen);
+}
+
+.bg-natural-medium {
+  background-color: var(--color-oatmeal);
+}
+
+.bg-natural-warm {
+  background-color: var(--color-natural-beige);
+}
+
+.bg-natural-taupe {
+  background-color: var(--color-taupe);
+}
+
+.bg-natural-stone {
+  background-color: var(--color-stone-gray);
 }

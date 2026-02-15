@@ -4,10 +4,10 @@ export default function Home() {
   return (
     <main className="relative w-screen overflow-hidden -mt-16">
       {/* Hero Section */}
-      <div className="relative h-screen">
+      <div className="relative h-screen bg-natural-light texture-linen">
         <CloudHero />
         <div className="absolute inset-0 flex items-center justify-center p-6">
-          <div className="max-w-3xl rounded-2xl bg-white/80 p-10 backdrop-blur-md shadow-xl">
+          <div className="max-w-3xl rounded-2xl bg-natural-medium/95 texture-ceramic p-10 backdrop-blur-md shadow-xl border border-stone-200">
             <div className="text-center">
               <h1 className="text-5xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
                 FVNIX
@@ -40,7 +40,7 @@ export default function Home() {
       </div>
 
       {/* Company Values Section */}
-      <section className="py-20 px-6 bg-gradient-to-b from-white to-gray-50">
+      <section className="py-20 px-6 bg-natural-warm texture-woven">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -52,7 +52,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-natural-light texture-linen rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-stone-200">
               <div className="text-4xl mb-4">🏔️</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">High Altitude Excellence</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -61,7 +61,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-natural-light texture-linen rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-stone-200">
               <div className="text-4xl mb-4">✨</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Premium Quality</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -70,7 +70,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-natural-light texture-linen rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-stone-200">
               <div className="text-4xl mb-4">🌿</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Sustainable Sourcing</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -83,7 +83,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose FVNIX Section */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-natural-medium texture-stone">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -140,7 +140,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-r from-green-600 to-blue-600 text-white">
+      <section className="py-20 px-6 bg-natural-taupe texture-wood text-gray-900">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">
             Ready to Experience Premium Natural Ingredients?
@@ -151,13 +151,13 @@ export default function Home() {
           <div className="flex flex-wrap gap-4 justify-center">
             <a 
               href="/request" 
-              className="rounded-xl bg-white text-green-700 px-8 py-4 font-bold text-lg hover:bg-gray-100 transition-all shadow-lg"
+              className="rounded-xl bg-natural-light text-gray-900 px-8 py-4 font-bold text-lg hover:bg-natural-warm transition-all shadow-lg border border-stone-300"
             >
               Request Free Samples
             </a>
             <a 
               href="mailto:info@fvnix.com" 
-              className="rounded-xl border-2 border-white px-8 py-4 font-bold text-lg hover:bg-white/10 transition-all"
+              className="rounded-xl border-2 border-gray-900 px-8 py-4 font-bold text-lg hover:bg-gray-900/10 transition-all"
             >
               Contact Us
             </a>

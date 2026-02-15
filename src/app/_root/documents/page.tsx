@@ -41,11 +41,13 @@ function DocumentsContent() {
   });
 
   return (
-    <main className="mx-auto max-w-6xl p-6">
-      <h1 className="text-3xl font-semibold">Document Center</h1>
-      <p className="mt-2 text-sm opacity-80">
-        Multi-select filters: type / product / lot. Shareable URLs.
-      </p>
+    <main className="mx-auto max-w-6xl p-6 min-h-screen bg-natural-light texture-linen">
+      <div className="bg-natural-medium/80 texture-ceramic rounded-xl p-8 mb-8 border border-stone-200">
+        <h1 className="text-3xl font-semibold text-gray-900">Document Center</h1>
+        <p className="mt-2 text-sm text-gray-700 opacity-90">
+          Multi-select filters: type / product / lot. Shareable URLs.
+        </p>
+      </div>
 
       <div className="mt-6">
         <DocumentsFilters typeValues={types} productValues={productValues} lotValues={lotNos} />
@@ -60,7 +62,7 @@ function DocumentsContent() {
           <a
             key={d.id}
             href={d.url}
-            className="rounded-2xl border p-4 hover:shadow"
+            className="rounded-2xl bg-natural-medium texture-woven border border-stone-200 p-4 hover:shadow-lg transition-shadow"
             target="_blank"
             rel="noreferrer"
           >
@@ -77,7 +79,7 @@ function DocumentsContent() {
       </div>
 
       {docs.length === 0 && (
-        <div className="mt-10 rounded-2xl border p-6 text-sm opacity-80">
+        <div className="mt-10 rounded-2xl bg-natural-warm texture-stone border border-stone-200 p-6 text-sm text-gray-700">
           No results. Try clearing filters or changing keywords.
         </div>
       )}
