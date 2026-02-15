@@ -1,23 +1,112 @@
 @import "tailwindcss";
 
 :root {
-  /* Natural Earth Color Palette */
-  --color-oatmeal: #F5F1E8;
-  --color-linen: #FDFBF7;
-  --color-natural-beige: #E6DFD1;
-  --color-ameland: #D9D0C1;
-  --color-taupe: #C8BFB0;
-  --color-stone-gray: #A8A299;
-  --color-warm-brown: #9A826F;
-  --color-essen-grijs: #8F8B82;
-  --color-dark-wood: #7C6A58;
+  /* === CORE BRAND PALETTE (3 Primary Colors) === */
+  /* Main site colors - used for 70% of design */
+  --color-primary-light: #F5F1E8;      /* Oatmeal - Main background */
+  --color-primary-medium: #C8BFB0;     /* Taupe - Cards and sections */
+  --color-primary-dark: #6B7A5B;       /* Moss - Headers and accents */
   
-  /* Main Variables */
+  /* === NEUTRAL BASE PALETTE === */
+  /* Expanded neutrals for subtle variations */
+  --color-linen: #FDFBF7;              /* Lightest base - pure white alternative */
+  --color-oatmeal: #F5F1E8;            /* Light warm neutral - primary bg */
+  --color-feather-cloud: #F2F2F2;      /* Pure light neutral */
+  --color-dawn: #E8DFC4;               /* Warm cream - Highland palette */
+  --color-natural-beige: #E6DFD1;      /* Soft beige */
+  --color-porcelain-oat: #D9D0C7;      /* Oat tone - card backgrounds */
+  --color-ameland: #D9D0C1;            /* Natural sand */
+  
+  /* === EARTH TONES PALETTE === */
+  /* Mid-tones for sections and cards */
+  --color-dusty-beige: #DBD1C5;        /* Soft dusty tone - from image palette */
+  --color-taupe: #C8BFB0;              /* Classic taupe - primary medium */
+  --color-dusk: #B5A691;               /* Warm dusk */
+  --color-almond-cream: #A69586;       /* Almond tone */
+  --color-stone-gray: #A8A299;         /* Stone gray */
+  --color-warm-brown: #9A826F;         /* Warm brown */
+  --color-cinnamon: #B8916A;           /* Cinnamon spice - warm highlight */
+  --color-mocha: #857861;              /* Mocha brown */
+  --color-essen-grijs: #8F8B82;        /* Essen gray */
+  --color-truffle: #554D3A;            /* Dark truffle */
+  
+  /* === GREEN ACCENTS PALETTE === */
+  /* Essential oils and natural products - main brand color family */
+  --color-sage: #8B9D83;               /* Soft sage - from image palette */
+  --color-moss: #6B7A5B;               /* Natural moss - primary dark */
+  --color-heather: #A49B71;            /* Heather green */
+  --color-mossy: #7B7D38;              /* Mossy olive - Highland */
+  --color-eucalyptus-fog: #4D6768;     /* Eucalyptus fog - from image palette */
+  --color-coastal-pine: #3E5954;       /* Coastal pine - deep green */
+  --color-forest-dusk: #383818;        /* Forest dusk */
+  --color-shade: #505342;              /* Shade green */
+  --color-dusty-sage: #758886;         /* Dusty sage - from image palette */
+  --color-meadow-sage: #95A862;        /* Meadow sage */
+  --color-moorland: #132B16;           /* Dark moorland */
+  
+  /* === PRODUCT CATEGORY COLORS === */
+  /* Floral Series - Soft pinks and creams */
+  --product-floral-light: #F0EDE5;     /* Soft oat - from image */
+  --product-floral-medium: #E8DDD5;    /* Quartz - from image */
+  --product-floral-accent: #D4C5BA;    /* Rose ash - from image */
+  
+  /* Citrus Series - Warm yellows and greens */
+  --product-citrus-light: #E8E4E0;     /* Mist - from image */
+  --product-citrus-medium: #C8A66C;    /* Honeyed gold */
+  --product-citrus-accent: #95A862;    /* Meadow sage */
+  
+  /* Herbal Series - Natural greens */
+  --product-herbal-light: #C8BBA6;     /* From image palette */
+  --product-herbal-medium: #8B9D83;    /* Sage - from image */
+  --product-herbal-accent: #6B7A5B;    /* Moss */
+  
+  /* Woody Series - Deep browns */
+  --product-woody-light: #B4A488;      /* From image palette */
+  --product-woody-medium: #9A826F;     /* Warm brown */
+  --product-woody-accent: #554D3A;     /* Truffle */
+  
+  /* Spicy Series - Warm cinnamon tones */
+  --product-spicy-light: #C8A66C;      /* From image */
+  --product-spicy-medium: #B8916A;     /* Cinnamon */
+  --product-spicy-accent: #857861;     /* Mocha */
+  
+  /* Resinous Series - Deep forest tones */
+  --product-resinous-light: #758886;   /* Dusty sage - from image */
+  --product-resinous-medium: #4D6768;  /* Eucalyptus fog - from image */
+  --product-resinous-accent: #3E5954;  /* Coastal pine - from image */
+  
+  /* === WARM HIGHLIGHTS PALETTE === */
+  /* For CTAs and important elements */
+  --color-rose-ash: #D4C5BA;           /* Rose ash - subtle highlight */
+  --color-quartz: #E8DDD5;             /* Quartz stone */
+  --color-mist: #DFE0DA;               /* Soft mist - from image palette */
+  --color-linen-clay: #C6C2BB;         /* Linen clay - from image palette */
+  --color-soft-oat: #F0EDE5;           /* Soft oat - from image palette */
+  
+  /* === ACCENT COLORS === */
+  /* Deep tones for contrast */
+  --color-midnight-roast: #403B31;     /* Deep brown - from image */
+  --color-luxe-noir: #060D0C;          /* Luxe black - from image */
+  --color-dusty-sage: #758886;      /* Dusty sage */
+  --color-linen-clay: #C6C2BB;      /* Linen clay */
+  --color-soft-oat: #F0EDE5;        /* Soft oat */
+  
+  /* === MAIN VARIABLES === */
   --background: var(--color-linen);
   --foreground: #2C2418;
   --background-secondary: var(--color-oatmeal);
+  --background-tertiary: var(--color-dawn);
   --text-muted: #6B5D4F;
   --border-color: var(--color-taupe);
+  --border-light: var(--color-porcelain-oat);
+  
+  /* === CATEGORY COLORS === */
+  --category-floral: var(--color-rose-ash);
+  --category-citrus: var(--color-honeyed);
+  --category-herbal: var(--color-sage);
+  --category-woody: var(--color-cinnamon);
+  --category-spicy: var(--color-mocha);
+  --category-resinous: var(--color-truffle);
 }
 
 @theme inline {
@@ -167,4 +256,218 @@ body::before {
 
 .bg-natural-stone {
   background-color: var(--color-stone-gray);
+}
+
+.bg-dawn {
+  background-color: var(--color-dawn);
+}
+
+.bg-sage {
+  background-color: var(--color-sage);
+}
+
+.bg-moss {
+  background-color: var(--color-moss);
+}
+
+.bg-eucalyptus {
+  background-color: var(--color-eucalyptus-fog);
+}
+
+/* === PRODUCT CATEGORY UTILITIES === */
+/* Based on natural material color palettes - organized by product type */
+
+/* Floral Series - Soft pinks, creams, and rose tones */
+.product-floral-light {
+  background-color: var(--product-floral-light);
+}
+
+.product-floral-medium {
+  background-color: var(--product-floral-medium);
+}
+
+.product-floral-accent {
+  background-color: var(--product-floral-accent);
+}
+
+.product-floral-card {
+  background: linear-gradient(135deg, var(--product-floral-light) 0%, var(--product-floral-medium) 100%);
+  border: 1px solid var(--product-floral-accent);
+}
+
+/* Citrus Series - Warm yellows, golds, and fresh greens */
+.product-citrus-light {
+  background-color: var(--product-citrus-light);
+}
+
+.product-citrus-medium {
+  background-color: var(--product-citrus-medium);
+}
+
+.product-citrus-accent {
+  background-color: var(--product-citrus-accent);
+}
+
+.product-citrus-card {
+  background: linear-gradient(135deg, var(--product-citrus-light) 0%, var(--product-citrus-medium) 100%);
+  border: 1px solid var(--product-citrus-accent);
+}
+
+/* Herbal Series - Natural greens and sage tones */
+.product-herbal-light {
+  background-color: var(--product-herbal-light);
+}
+
+.product-herbal-medium {
+  background-color: var(--product-herbal-medium);
+}
+
+.product-herbal-accent {
+  background-color: var(--product-herbal-accent);
+}
+
+.product-herbal-card {
+  background: linear-gradient(135deg, var(--product-herbal-light) 0%, var(--product-herbal-medium) 100%);
+  border: 1px solid var(--product-herbal-accent);
+}
+
+/* Woody Series - Deep browns and warm earth tones */
+.product-woody-light {
+  background-color: var(--product-woody-light);
+}
+
+.product-woody-medium {
+  background-color: var(--product-woody-medium);
+}
+
+.product-woody-accent {
+  background-color: var(--product-woody-accent);
+}
+
+.product-woody-card {
+  background: linear-gradient(135deg, var(--product-woody-light) 0%, var(--product-woody-medium) 100%);
+  border: 1px solid var(--product-woody-accent);
+}
+
+/* Spicy Series - Warm cinnamon and spice tones */
+.product-spicy-light {
+  background-color: var(--product-spicy-light);
+}
+
+.product-spicy-medium {
+  background-color: var(--product-spicy-medium);
+}
+
+.product-spicy-accent {
+  background-color: var(--product-spicy-accent);
+}
+
+.product-spicy-card {
+  background: linear-gradient(135deg, var(--product-spicy-light) 0%, var(--product-spicy-medium) 100%);
+  border: 1px solid var(--product-spicy-accent);
+}
+
+/* Resinous Series - Deep forest and pine tones */
+.product-resinous-light {
+  background-color: var(--product-resinous-light);
+}
+
+.product-resinous-medium {
+  background-color: var(--product-resinous-medium);
+}
+
+.product-resinous-accent {
+  background-color: var(--product-resinous-accent);
+}
+
+.product-resinous-card {
+  background: linear-gradient(135deg, var(--product-resinous-light) 0%, var(--product-resinous-medium) 100%);
+  border: 1px solid var(--product-resinous-accent);
+}
+
+/* Product badge styles */
+.product-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.product-badge-floral {
+  background-color: var(--product-floral-medium);
+  color: #6B5D4F;
+}
+
+.product-badge-citrus {
+  background-color: var(--product-citrus-medium);
+  color: #6B5D4F;
+}
+
+.product-badge-herbal {
+  background-color: var(--product-herbal-medium);
+  color: #FDFBF7;
+}
+
+.product-badge-woody {
+  background-color: var(--product-woody-medium);
+  color: #FDFBF7;
+}
+
+.product-badge-spicy {
+  background-color: var(--product-spicy-medium);
+  color: #FDFBF7;
+}
+
+.product-badge-resinous {
+  background-color: var(--product-resinous-medium);
+  color: #FDFBF7;
+}
+
+/* Hover states for product cards */
+.product-card {
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(44, 36, 24, 0.15);
+}
+
+/* Category section backgrounds */
+.section-floral {
+  background: linear-gradient(180deg, var(--product-floral-light) 0%, var(--color-linen) 100%);
+}
+
+.section-citrus {
+  background: linear-gradient(180deg, var(--product-citrus-light) 0%, var(--color-linen) 100%);
+}
+
+.section-herbal {
+  background: linear-gradient(180deg, var(--product-herbal-light) 0%, var(--color-linen) 100%);
+}
+
+.section-woody {
+  background: linear-gradient(180deg, var(--product-woody-light) 0%, var(--color-linen) 100%);
+}
+
+.section-spicy {
+  background: linear-gradient(180deg, var(--product-spicy-light) 0%, var(--color-linen) 100%);
+}
+
+.section-resinous {
+  background: linear-gradient(180deg, var(--product-resinous-light) 0%, var(--color-linen) 100%);
+}
+
+/* Section dividers with natural colors */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--border-color) 50%,
+    transparent 100%
+  );
+  opacity: 0.3;
 }

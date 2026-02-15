@@ -13,6 +13,89 @@ function normalize(s: string) {
   return (s || "").trim().toLowerCase();
 }
 
+// Get category-specific styling based on series
+function getCategoryStyles(series: string) {
+  const s = normalize(series);
+  
+  if (s.includes("floral") || s.includes("flower")) {
+    return {
+      badge: "product-badge product-badge-floral",
+      card: "product-floral-card texture-ceramic",
+      border: "border-2"
+    };
+  }
+  
+  if (s.includes("citrus")) {
+    return {
+      badge: "product-badge product-badge-citrus",
+      card: "product-citrus-card texture-woven",
+      border: "border-2"
+    };
+  }
+  
+  if (s.includes("herbal") || s.includes("herb")) {
+    return {
+      badge: "product-badge product-badge-herbal",
+      card: "product-herbal-card texture-linen",
+      border: "border-2"
+    };
+  }
+  
+  if (s.includes("woody") || s.includes("wood")) {
+    return {
+      badge: "product-badge product-badge-woody",
+      card: "product-woody-card texture-wood",
+      border: "border-2"
+    };
+  }
+  
+  if (s.includes("spicy") || s.includes("spice")) {
+    return {
+      badge: "product-badge product-badge-spicy",
+      card: "product-spicy-card texture-stone",
+      border: "border-2"
+    };
+  }
+  
+  if (s.includes("resinous") || s.includes("resin")) {
+    return {
+      badge: "product-badge product-badge-resinous",
+      card: "product-resinous-card texture-woven",
+      border: "border-2"
+    };
+  }
+  
+  // Default styling
+  return {
+    badge: "text-xs text-gray-600",
+    card: "bg-natural-medium texture-woven",
+    border: "border border-stone-200"
+  };
+}
+
+// Map product series to category color classes
+function getCategoryColorClass(series: string): string {
+  const normalized = normalize(series);
+  if (normalized.includes('floral') || normalized.includes('rose')) return 'category-floral';
+  if (normalized.includes('citrus')) return 'category-citrus';
+  if (normalized.includes('herbal') || normalized.includes('herb')) return 'category-herbal';
+  if (normalized.includes('wood') || normalized.includes('cedar') || normalized.includes('sandalwood')) return 'category-woody';
+  if (normalized.includes('spice') || normalized.includes('spicy') || normalized.includes('cinnamon')) return 'category-spicy';
+  if (normalized.includes('resin')) return 'category-resinous';
+  return 'bg-natural-warm'; // default fallback
+}
+
+function getCategoryTextClass(series: string): string {
+  const normalized = normalize(series);
+  if (normalized.includes('floral') || normalized.includes('rose')) return 'text-category-floral';
+  if (normalized.includes('citrus')) return 'text-category-citrus';
+  if (normalized.includes('herbal') || normalized.includes('herb')) return 'text-category-herbal';
+  if (normalized.includes('wood') || normalized.includes('cedar') || normalized.includes('sandalwood')) return 'text-category-woody';
+  if (normalized.includes('spice') || normalized.includes('spicy') || normalized.includes('cinnamon')) return 'text-category-spicy';
+  if (normalized.includes('resin')) return 'text-category-resinous';
+  return 'text-gray-700'; // default fallback
+}
+
 function ProductsContent() {
   const searchParams = useSearchParams();
   const all = getAllProducts();
@@ -93,24 +176,34 @@ function ProductsContent() {
       </div>
 
       <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {filtered.map((p) => (
-          <Link key={p.slug} href={`/products/${p.slug}`} className="rounded-2xl bg-natural-medium texture-woven border border-stone-200 p-4 hover:shadow-lg transition-shadow">
-            <div className="text-xs text-gray-600">{p.series || "—"}</div>
-            <div className="mt-1 text-lg font-medium text-gray-900">{p.name.en || p.name.zh}</div>
-            <div className="text-sm text-gray-600">{p.latinName}</div>
-            <div className="mt-3 text-xs text-gray-600">{p.origin} · {p.altitude} · {p.extraction}</div>
-
-            {p.tags?.length ? (
-              <div className="mt-3 flex flex-wrap gap-2">
-                {p.tags.slice(0, 4).map((t) => (
-                  <span key={t} className="rounded-full bg-natural-light border border-stone-300 px-2 py-1 text-xs text-gray-700">
-                    {t}
-                  </span>
-                ))}
+        {filtered.map((p) => {
+          const categoryStyle = getCategoryStyles(p.series || "");
+          
+          return (
+            <Link 
+              key={p.slug} 
+              href={`/products/${p.slug}`} 
+              className={`rounded-2xl ${categoryStyle.card} ${categoryStyle.border} p-4 hover:shadow-lg transition-all product-card`}
+            >
+              <div className={categoryStyle.badge}>
+                {p.series || "—"}
               </div>
-            ) : null}
-          </Link>
-        ))}
+              <div className="mt-1 text-lg font-medium text-gray-900">{p.name.en || p.name.zh}</div>
+              <div className="text-sm text-gray-600">{p.latinName}</div>
+              <div className="mt-3 text-xs text-gray-600">{p.origin} · {p.altitude} · {p.extraction}</div>
+
+              {p.tags?.length ? (
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {p.tags.slice(0, 4).map((t) => (
+                    <span key={t} className="rounded-full bg-natural-light/80 border border-stone-300 px-2 py-1 text-xs text-gray-700">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              ) : null}
+            </Link>
+          );
+        })}
       </div>
 
       {filtered.length === 0 && (
