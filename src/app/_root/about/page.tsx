@@ -1,8 +1,8 @@
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <main className="min-h-screen bg-natural-light texture-linen">
       {/* Hero Section */}
-      <section className="relative py-20 px-6 bg-gradient-to-r from-green-600 to-blue-600 text-white">
+      <section className="relative py-20 px-6 bg-natural-taupe texture-wood text-gray-900">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6">About FVNIX</h1>
           <p className="text-2xl mb-4 opacity-90">
@@ -24,7 +24,7 @@ export default function AboutPage() {
             </p>
           </div>
           
-          <div className="bg-white rounded-2xl shadow-xl p-10 max-w-4xl mx-auto">
+          <div className="bg-natural-medium texture-ceramic rounded-2xl shadow-xl p-10 max-w-4xl mx-auto border border-stone-200">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               Yunnan Province — once called "Shangri-La," a pristine highland plateau. 
               With its vast altitude variations, it has nurtured a unique "Kingdom of Plants."
@@ -41,17 +41,17 @@ export default function AboutPage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mt-12">
-            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 text-center">
+            <div className="bg-natural-warm texture-woven rounded-xl p-6 text-center border border-stone-200">
               <div className="text-4xl mb-3">🏔️</div>
               <h3 className="text-xl font-bold text-green-900">Pure & Natural</h3>
               <p className="text-green-800 mt-2">From Yunnan High Plateau</p>
             </div>
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 text-center">
+            <div className="bg-natural-warm texture-woven rounded-xl p-6 text-center border border-stone-200">
               <div className="text-4xl mb-3">✨</div>
               <h3 className="text-xl font-bold text-blue-900">High Quality</h3>
               <p className="text-blue-800 mt-2">International Standards</p>
             </div>
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 text-center">
+            <div className="bg-natural-warm texture-woven rounded-xl p-6 text-center border border-stone-200">
               <div className="text-4xl mb-3">🌿</div>
               <h3 className="text-xl font-bold text-purple-900">Sustainable</h3>
               <p className="text-purple-800 mt-2">Traceable Supply Chain</p>
@@ -61,12 +61,12 @@ export default function AboutPage() {
       </section>
 
       {/* Establishment Background */}
-      <section className="py-16 px-6 bg-gray-50">
+      <section className="py-16 px-6 bg-natural-warm texture-stone">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Establishment Background</h2>
           
           <div className="grid md:grid-cols-2 gap-10">
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            <div className="bg-natural-light texture-linen rounded-xl shadow-lg p-8 border border-stone-200">
               <div className="flex items-center mb-4">
                 <div className="text-3xl mr-3">👤</div>
                 <h3 className="text-2xl font-bold text-gray-900">25+ Years Experience</h3>
@@ -78,7 +78,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            <div className="bg-natural-light texture-linen rounded-xl shadow-lg p-8 border border-stone-200">
               <div className="flex items-center mb-4">
                 <div className="text-3xl mr-3">🏢</div>
                 <h3 className="text-2xl font-bold text-gray-900">Tokyo Base</h3>
@@ -99,7 +99,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">Our Mission</h2>
           
-          <div className="bg-gradient-to-r from-green-600 to-blue-600 rounded-2xl shadow-2xl p-10 text-white">
+          <div className="bg-natural-taupe texture-ceramic rounded-2xl shadow-2xl p-10 text-gray-900 border border-stone-300">
             <h3 className="text-3xl font-bold mb-6 text-center">
               "Abundant Natural Resources" × "Modern Processing Technology"
             </h3>
@@ -114,12 +114,12 @@ export default function AboutPage() {
       </section>
 
       {/* Our Strengths */}
-      <section className="py-16 px-6 bg-gray-50">
+      <section className="py-16 px-6 bg-natural-warm texture-stone">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Our Strengths</h2>
           
           <div className="space-y-8">
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <div className="bg-natural-medium texture-linen rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border border-stone-200">
               <div className="flex items-start">
                 <div className="text-4xl mr-4">🔗</div>
                 <div>
@@ -134,7 +134,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <div className="bg-natural-medium texture-linen rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border border-stone-200">
               <div className="flex items-start">
                 <div className="text-4xl mr-4">✅</div>
                 <div>
@@ -149,7 +149,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <div className="bg-natural-medium texture-linen rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border border-stone-200">
               <div className="flex items-start">
                 <div className="text-4xl mr-4">🌍</div>
                 <div>
@@ -177,7 +177,7 @@ export default function AboutPage() {
           
           <div className="grid md:grid-cols-2 gap-10">
             {/* Original Brand */}
-            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl shadow-xl p-10">
+            <div className="bg-natural-warm texture-woven rounded-2xl shadow-xl p-10 border border-stone-200">
               <h3 className="text-3xl font-bold text-green-900 mb-6">
                 🏔️ Original Brand
               </h3>
@@ -201,7 +201,7 @@ export default function AboutPage() {
             </div>
 
             {/* B2B Solution */}
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-xl p-10">
+            <div className="bg-natural-warm texture-woven rounded-2xl shadow-xl p-10 border border-stone-200">
               <h3 className="text-3xl font-bold text-blue-900 mb-6">
                 🤝 B2B Solution
               </h3>
@@ -228,7 +228,7 @@ export default function AboutPage() {
       </section>
 
       {/* Product Categories */}
-      <section className="py-16 px-6 bg-gray-50">
+      <section className="py-16 px-6 bg-natural-warm texture-stone">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Product Categories</h2>
           
@@ -289,7 +289,7 @@ export default function AboutPage() {
             feel free to contact us anytime.
           </p>
           
-          <div className="bg-white/10 backdrop-blur rounded-xl p-8 mb-8">
+          <div className="bg-natural-light/90 backdrop-blur rounded-xl p-8 mb-8 border border-stone-300">
             <h3 className="text-2xl font-bold mb-4">FVNIX LLC · 凤凰有限公司</h3>
             <div className="space-y-2">
               <p className="text-lg">
@@ -318,7 +318,7 @@ export default function AboutPage() {
 
           <a 
             href="/request" 
-            className="inline-block rounded-xl bg-white text-green-700 px-8 py-4 font-bold text-lg hover:bg-gray-100 transition-all shadow-lg mt-6"
+            className="inline-block rounded-xl bg-natural-light text-gray-900 px-8 py-4 font-bold text-lg hover:bg-natural-warm transition-all shadow-lg mt-6 border border-stone-300"
           >
             Request Samples or Quote
           </a>

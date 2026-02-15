@@ -25,15 +25,17 @@ function RequestContent() {
   }
 
   return (
-    <main className="mx-auto max-w-xl p-6">
-      <h1 className="text-3xl font-semibold">{type === "sample" ? "Request Sample" : "Request Quote"}</h1>
-      <p className="mt-2 text-sm opacity-80">Product: {product || "—"}</p>
+    <main className="mx-auto max-w-xl p-6 min-h-screen bg-natural-light texture-linen">
+      <div className="bg-natural-medium texture-ceramic rounded-xl p-8 mb-8 border border-stone-200">
+        <h1 className="text-3xl font-semibold text-gray-900">{type === "sample" ? "Request Sample" : "Request Quote"}</h1>
+        <p className="mt-2 text-sm text-gray-700 opacity-90">Product: {product || "—"}</p>
+      </div>
 
       <div className="mt-6 space-y-3">
-        <input className="w-full rounded-xl border p-3" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <input className="w-full rounded-xl border p-3" placeholder="Company" value={company} onChange={(e) => setCompany(e.target.value)} />
-        <textarea className="w-full rounded-xl border p-3" placeholder="Message" rows={5} value={msg} onChange={(e) => setMsg(e.target.value)} />
-        <button className="w-full rounded-xl bg-black p-3 text-white" onClick={submit}>Submit</button>
+        <input className="w-full rounded-xl bg-natural-light border border-stone-300 p-3 focus:outline-none focus:ring-2 focus:ring-stone-400" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <input className="w-full rounded-xl bg-natural-light border border-stone-300 p-3 focus:outline-none focus:ring-2 focus:ring-stone-400" placeholder="Company" value={company} onChange={(e) => setCompany(e.target.value)} />
+        <textarea className="w-full rounded-xl bg-natural-light border border-stone-300 p-3 focus:outline-none focus:ring-2 focus:ring-stone-400" placeholder="Message" rows={5} value={msg} onChange={(e) => setMsg(e.target.value)} />
+        <button className="w-full rounded-xl bg-natural-taupe hover:bg-natural-stone p-3 text-gray-900 font-semibold transition-colors border border-stone-300" onClick={submit}>Submit</button>
         {ok && <div className="text-sm opacity-80">{ok}</div>}
       </div>
     </main>
