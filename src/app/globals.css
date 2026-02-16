@@ -144,18 +144,21 @@
   --font-mono: var(--font-geist-mono);
   --font-display: var(--font-cormorant);
   --font-body: var(--font-montserrat);
-  --font-en: 'TAN Nightingale', 'Cormorant Garamond', 'Georgia', serif;
+  --font-en: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   --font-ja: 'A-OTF Ryumin Pr6N', 'Ryumin', 'Yu Mincho', 'YuMincho', 'Hiragino Mincho ProN', 'MS Mincho', serif;
   --font-zh: 'A-OTF Ryumin Pr6N', 'Ryumin', 'Noto Serif TC', 'Microsoft JhengHei', serif;
 }
 
 /* Typography utilities */
 .font-display {
-  font-family: var(--font-cormorant), 'Noto Serif JP', serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .font-body {
-  font-family: var(--font-montserrat), 'Noto Sans JP', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
 }
 
 /* Language-specific fonts */
