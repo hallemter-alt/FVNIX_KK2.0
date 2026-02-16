@@ -26,16 +26,16 @@ function RequestContent() {
 
   return (
     <main className="mx-auto max-w-xl p-6 min-h-screen bg-natural-light texture-linen">
-      <div className="bg-natural-medium texture-ceramic rounded-xl p-8 mb-8 border border-stone-200">
-        <h1 className="text-3xl font-semibold text-gray-900">{type === "sample" ? "Request Sample" : "Request Quote"}</h1>
-        <p className="mt-2 text-sm text-gray-700 opacity-90">Product: {product || "—"}</p>
+      <div className="bg-warm-white texture-ceramic rounded-xl p-8 mb-8 border-2" style={{borderColor: 'var(--color-warm-gray)'}}>
+        <h1 className="text-3xl font-display font-semibold" style={{color: 'var(--color-text-primary)'}}>{type === "sample" ? "Request Sample" : "Request Quote"}</h1>
+        <p className="mt-2 text-sm font-body" style={{color: 'var(--color-text-secondary)'}}>Product: {product || "—"}</p>
       </div>
 
       <div className="mt-6 space-y-3">
-        <input className="w-full rounded-xl bg-natural-light border border-stone-300 p-3 focus:outline-none focus:ring-2 focus:ring-stone-400" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <input className="w-full rounded-xl bg-natural-light border border-stone-300 p-3 focus:outline-none focus:ring-2 focus:ring-stone-400" placeholder="Company" value={company} onChange={(e) => setCompany(e.target.value)} />
-        <textarea className="w-full rounded-xl bg-natural-light border border-stone-300 p-3 focus:outline-none focus:ring-2 focus:ring-stone-400" placeholder="Message" rows={5} value={msg} onChange={(e) => setMsg(e.target.value)} />
-        <button className="w-full rounded-xl bg-natural-taupe hover:bg-natural-stone p-3 text-gray-900 font-semibold transition-colors border border-stone-300" onClick={submit}>Submit</button>
+        <input className="w-full rounded-xl font-body p-3 border-2 focus:outline-none transition-all" style={{backgroundColor: 'var(--color-warm-white)', borderColor: 'var(--color-warm-gray)', color: 'var(--color-text-primary)'}} placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <input className="w-full rounded-xl font-body p-3 border-2 focus:outline-none transition-all" style={{backgroundColor: 'var(--color-warm-white)', borderColor: 'var(--color-warm-gray)', color: 'var(--color-text-primary)'}} placeholder="Company" value={company} onChange={(e) => setCompany(e.target.value)} />
+        <textarea className="w-full rounded-xl font-body p-3 border-2 focus:outline-none transition-all" style={{backgroundColor: 'var(--color-warm-white)', borderColor: 'var(--color-warm-gray)', color: 'var(--color-text-primary)'}} placeholder="Message" rows={5} value={msg} onChange={(e) => setMsg(e.target.value)} />
+        <button className="w-full rounded-xl font-body p-3 font-semibold transition-all border-2 hover:shadow-lg" style={{backgroundColor: 'var(--color-sage)', color: 'var(--color-text-light)', borderColor: 'var(--color-sage)'}} onClick={submit}>Submit</button>
         {ok && <div className="text-sm opacity-80">{ok}</div>}
       </div>
     </main>

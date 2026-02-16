@@ -2,10 +2,10 @@ export default function CertificationsPage() {
   return (
     <main className="min-h-screen bg-natural-light texture-linen">
       {/* Hero Section */}
-      <section className="relative py-20 px-6 bg-natural-taupe texture-wood text-gray-900">
+      <section className="relative py-20 px-6 bg-natural-taupe texture-wood">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl font-bold mb-6">Quality Assurance & Sustainability</h1>
-          <p className="text-2xl opacity-90">
+          <h1 className="text-5xl font-display font-bold mb-6" style={{color: 'var(--color-text-primary)'}}>Quality Assurance & Sustainability</h1>
+          <p className="text-2xl font-body" style={{color: 'var(--color-text-secondary)'}}>
             International Certifications & Sustainable Practices
           </p>
         </div>

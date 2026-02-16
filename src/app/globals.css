@@ -1,11 +1,36 @@
 @import "tailwindcss";
 
 :root {
-  /* === CORE BRAND PALETTE (3 Primary Colors) === */
-  /* Main site colors - used for 70% of design */
-  --color-primary-light: #F5F1E8;      /* Oatmeal - Main background */
-  --color-primary-medium: #C8BFB0;     /* Taupe - Cards and sections */
-  --color-primary-dark: #6B7A5B;       /* Moss - Headers and accents */
+  /* === CORE DESIGN SYSTEM === */
+  /* Pure, Warm, Clean, Luxurious Color Palette */
+  
+  /* PRIMARY WARM NEUTRALS - Used for 80% of site */
+  --color-cream: #FAF8F3;              /* Lightest cream - main backgrounds */
+  --color-warm-white: #F7F5EF;         /* Warm white - cards */
+  --color-oatmeal: #F0EDE5;            /* Oatmeal - sections */
+  --color-linen: #E8E4DC;              /* Linen - borders and dividers */
+  
+  /* WARM EARTH TONES - For depth and hierarchy */
+  --color-sand: #D9D3C8;               /* Sand - subtle backgrounds */
+  --color-warm-gray: #C8C0B5;          /* Warm gray - borders */
+  --color-taupe: #B8AFA0;              /* Taupe - secondary elements */
+  --color-warm-brown: #9A8B7C;         /* Warm brown - muted text */
+  
+  /* ACCENT WARM TONES - For highlights and CTAs */
+  --color-soft-gold: #D4B896;          /* Soft gold - premium feel */
+  --color-warm-copper: #C19A6B;        /* Warm copper - active states */
+  --color-terracotta: #B8886F;         /* Terracotta - emphasis */
+  
+  /* NATURAL GREENS - Brand identity */
+  --color-sage: #8B9D83;               /* Soft sage - brand primary */
+  --color-olive: #7A8A6E;              /* Olive - hover states */
+  --color-forest: #6B7A5B;             /* Forest - dark accents */
+  
+  /* TEXT COLORS - High readability */
+  --color-text-primary: #2C2418;       /* Primary text - very dark brown */
+  --color-text-secondary: #5A4E3F;     /* Secondary text - medium brown */
+  --color-text-muted: #8A7D6F;         /* Muted text - light brown */
+  --color-text-light: #F7F5EF;         /* Light text - for dark backgrounds */
   
   /* === NEUTRAL BASE PALETTE === */
   /* Expanded neutrals for subtle variations */
