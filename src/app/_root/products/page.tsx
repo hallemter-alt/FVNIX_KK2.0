@@ -21,7 +21,8 @@ function getCategoryStyles(series: string) {
     return {
       badge: "product-badge product-badge-floral",
       card: "product-floral-card texture-ceramic",
-      border: "border-2"
+      border: "border-2",
+      textColor: "text-gray-900" // Dark text for light background
     };
   }
   
@@ -29,7 +30,8 @@ function getCategoryStyles(series: string) {
     return {
       badge: "product-badge product-badge-citrus",
       card: "product-citrus-card texture-woven",
-      border: "border-2"
+      border: "border-2",
+      textColor: "text-gray-900"
     };
   }
   
@@ -37,7 +39,8 @@ function getCategoryStyles(series: string) {
     return {
       badge: "product-badge product-badge-herbal",
       card: "product-herbal-card texture-linen",
-      border: "border-2"
+      border: "border-2",
+      textColor: "text-gray-100" // Light text for dark background
     };
   }
   
@@ -45,7 +48,8 @@ function getCategoryStyles(series: string) {
     return {
       badge: "product-badge product-badge-woody",
       card: "product-woody-card texture-wood",
-      border: "border-2"
+      border: "border-2",
+      textColor: "text-gray-100"
     };
   }
   
@@ -53,7 +57,8 @@ function getCategoryStyles(series: string) {
     return {
       badge: "product-badge product-badge-spicy",
       card: "product-spicy-card texture-stone",
-      border: "border-2"
+      border: "border-2",
+      textColor: "text-gray-900"
     };
   }
   
@@ -61,7 +66,8 @@ function getCategoryStyles(series: string) {
     return {
       badge: "product-badge product-badge-resinous",
       card: "product-resinous-card texture-woven",
-      border: "border-2"
+      border: "border-2",
+      textColor: "text-gray-100"
     };
   }
   
@@ -69,7 +75,8 @@ function getCategoryStyles(series: string) {
   return {
     badge: "text-xs text-gray-600",
     card: "bg-natural-medium texture-woven",
-    border: "border border-stone-200"
+    border: "border border-stone-200",
+    textColor: "text-gray-900"
   };
 }
 
@@ -183,24 +190,40 @@ function ProductsContent() {
             <Link 
               key={p.slug} 
               href={`/products/${p.slug}`} 
-              className={`rounded-2xl ${categoryStyle.card} ${categoryStyle.border} p-4 hover:shadow-lg transition-all product-card`}
+              className={`rounded-2xl ${categoryStyle.card} ${categoryStyle.border} p-5 hover:shadow-lg transition-all product-card relative overflow-hidden`}
             >
-              <div className={categoryStyle.badge}>
-                {p.series || "—"}
-              </div>
-              <div className="mt-1 text-lg font-medium text-gray-900">{p.name.en || p.name.zh}</div>
-              <div className="text-sm text-gray-600">{p.latinName}</div>
-              <div className="mt-3 text-xs text-gray-600">{p.origin} · {p.altitude} · {p.extraction}</div>
-
-              {p.tags?.length ? (
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {p.tags.slice(0, 4).map((t) => (
-                    <span key={t} className="rounded-full bg-natural-light/80 border border-stone-300 px-2 py-1 text-xs text-gray-700">
-                      {t}
-                    </span>
-                  ))}
+              {/* Content wrapper with better contrast */}
+              <div className="relative z-10">
+                <div className={categoryStyle.badge}>
+                  {p.series || "—"}
                 </div>
-              ) : null}
+                <div className={`mt-2 text-lg font-semibold ${categoryStyle.textColor}`}>
+                  {p.name.en || p.name.zh}
+                </div>
+                <div className={`text-sm ${categoryStyle.textColor} opacity-80 italic`}>
+                  {p.latinName}
+                </div>
+                <div className={`mt-3 text-xs ${categoryStyle.textColor} opacity-70`}>
+                  {p.origin} · {p.altitude} · {p.extraction}
+                </div>
+
+                {p.tags?.length ? (
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {p.tags.slice(0, 4).map((t) => (
+                      <span 
+                        key={t} 
+                        className={`rounded-full px-2 py-1 text-xs font-medium ${
+                          categoryStyle.textColor === "text-gray-100"
+                            ? "bg-white/20 text-white border border-white/30"
+                            : "bg-gray-900/10 text-gray-900 border border-gray-900/20"
+                        }`}
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
             </Link>
           );
         })}

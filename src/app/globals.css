@@ -114,6 +114,17 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-cormorant);
+  --font-body: var(--font-montserrat);
+}
+
+/* Typography utilities */
+.font-display {
+  font-family: var(--font-cormorant), 'Noto Serif JP', serif;
+}
+
+.font-body {
+  font-family: var(--font-montserrat), 'Noto Sans JP', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -387,42 +398,50 @@ body::before {
 
 /* Product badge styles */
 .product-badge {
-  padding: 0.25rem 0.75rem;
+  padding: 0.35rem 0.85rem;
   border-radius: 9999px;
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-size: 0.7rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
+  font-family: var(--font-montserrat), 'Noto Sans JP', sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .product-badge-floral {
-  background-color: var(--product-floral-medium);
-  color: #6B5D4F;
+  background-color: rgba(212, 197, 186, 0.95);
+  color: #4A3A2A;
+  border: 1px solid rgba(107, 93, 79, 0.3);
 }
 
 .product-badge-citrus {
-  background-color: var(--product-citrus-medium);
-  color: #6B5D4F;
+  background-color: rgba(200, 166, 108, 0.95);
+  color: #3A2A1A;
+  border: 1px solid rgba(107, 93, 79, 0.3);
 }
 
 .product-badge-herbal {
-  background-color: var(--product-herbal-medium);
-  color: #FDFBF7;
+  background-color: rgba(107, 122, 91, 0.95);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .product-badge-woody {
-  background-color: var(--product-woody-medium);
-  color: #FDFBF7;
+  background-color: rgba(85, 77, 58, 0.95);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .product-badge-spicy {
-  background-color: var(--product-spicy-medium);
-  color: #FDFBF7;
+  background-color: rgba(184, 145, 106, 0.95);
+  color: #2A1A0A;
+  border: 1px solid rgba(107, 93, 79, 0.3);
 }
 
 .product-badge-resinous {
-  background-color: var(--product-resinous-medium);
-  color: #FDFBF7;
+  background-color: rgba(77, 103, 104, 0.95);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Hover states for product cards */

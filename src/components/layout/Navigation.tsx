@@ -13,42 +13,42 @@ export default function Navigation() {
   const t = useTranslations("nav");
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-natural-light/95 backdrop-blur-md shadow-sm border-b border-stone-200">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href={`/${locale}`} className="flex items-center space-x-2">
-            <span className="text-2xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+          <Link href={`/${locale}`} className="flex items-center space-x-3">
+            <span className="text-2xl font-bold tracking-tight bg-gradient-to-r from-moss to-eucalyptus-fog bg-clip-text text-transparent" style={{ fontFamily: "'Cormorant Garamond', 'Noto Serif JP', serif" }}>
               FVNIX
             </span>
-            <span className="text-sm text-gray-600 hidden sm:inline">
+            <span className="text-xs text-gray-600 hidden sm:inline tracking-wide uppercase" style={{ fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif", letterSpacing: '0.1em' }}>
               {t("tagline")}
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
-            <Link href={`/${locale}`} className="text-gray-700 hover:text-green-600 font-medium transition-colors">
+          <div className="hidden lg:flex items-center space-x-6">
+            <Link href={`/${locale}`} className="text-gray-700 hover:text-moss font-medium transition-colors text-sm tracking-wide" style={{ fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif" }}>
               {t("home")}
             </Link>
-            <Link href={`/${locale}/about`} className="text-gray-700 hover:text-green-600 font-medium transition-colors">
+            <Link href={`/${locale}/about`} className="text-gray-700 hover:text-moss font-medium transition-colors text-sm tracking-wide" style={{ fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif" }}>
               {t("about")}
             </Link>
-            <Link href={`/${locale}/products`} className="text-gray-700 hover:text-green-600 font-medium transition-colors">
+            <Link href={`/${locale}/products`} className="text-gray-700 hover:text-moss font-medium transition-colors text-sm tracking-wide" style={{ fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif" }}>
               {t("products")}
             </Link>
-            <Link href={`/${locale}/documents`} className="text-gray-700 hover:text-green-600 font-medium transition-colors">
+            <Link href={`/${locale}/documents`} className="text-gray-700 hover:text-moss font-medium transition-colors text-sm tracking-wide" style={{ fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif" }}>
               {t("documents")}
             </Link>
-            <Link href={`/${locale}/certifications`} className="text-gray-700 hover:text-green-600 font-medium transition-colors">
+            <Link href={`/${locale}/certifications`} className="text-gray-700 hover:text-moss font-medium transition-colors text-sm tracking-wide" style={{ fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif" }}>
               {t("certifications")}
             </Link>
-            <Link href={`/${locale}/market-position`} className="text-gray-700 hover:text-green-600 font-medium transition-colors">
+            <Link href={`/${locale}/market-position`} className="text-gray-700 hover:text-moss font-medium transition-colors text-sm tracking-wide" style={{ fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif" }}>
               {t("marketPosition")}
             </Link>
             <Link 
               href={`/${locale}/request`}
-              className="rounded-lg bg-gradient-to-r from-green-600 to-green-700 px-4 py-2 text-white font-semibold hover:from-green-700 hover:to-green-800 transition-all shadow-md"
+              className="rounded-lg bg-gradient-to-r from-moss to-eucalyptus-fog px-5 py-2 text-white font-semibold hover:shadow-lg transition-all text-sm tracking-wide" style={{ fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif" }}
             >
               {t("contact")}
             </Link>
