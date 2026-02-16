@@ -2,9 +2,9 @@ import CloudHero from "@/components/hero/CloudHero";
 
 export default function Home() {
   return (
-    <main className="relative w-screen overflow-hidden -mt-16">
+    <main className="relative w-screen overflow-hidden -mt-16" style={{backgroundColor: '#C8BBA6'}}>
       {/* Hero Section */}
-      <div className="relative h-screen bg-natural-light texture-linen">
+      <div className="relative h-screen texture-linen" style={{backgroundColor: '#C8BBA6'}}>
         <CloudHero />
         <div className="absolute inset-0 flex items-center justify-center p-6">
           <div className="max-w-3xl rounded-2xl bg-warm-white/95 texture-ceramic p-10 backdrop-blur-md shadow-2xl border-2" style={{borderColor: 'var(--color-warm-gray)'}}>

@@ -9,6 +9,7 @@
   --color-warm-white: #F7F5EF;         /* Warm white - cards */
   --color-oatmeal: #F0EDE5;            /* Oatmeal - sections */
   --color-linen: #E8E4DC;              /* Linen - borders and dividers */
+  --color-dusty-sage-bg: #C8BBA6;      /* Dusty sage - main page background */
   
   /* WARM EARTH TONES - For depth and hierarchy */
   --color-sand: #D9D3C8;               /* Sand - subtle backgrounds */
@@ -25,6 +26,8 @@
   --color-sage: #8B9D83;               /* Soft sage - brand primary */
   --color-olive: #7A8A6E;              /* Olive - hover states */
   --color-forest: #6B7A5B;             /* Forest - dark accents */
+  --color-nav-bg: #3E5954;             /* Coastal pine - navigation background */
+  --color-nav-text: #FFFFFF;           /* White - navigation text */
   
   /* TEXT COLORS - High readability */
   --color-text-primary: #2C2418;       /* Primary text - very dark brown */
@@ -276,6 +279,10 @@ body::before {
 /* Page Background Variations */
 .bg-natural-light {
   background-color: var(--color-linen);
+}
+
+.bg-dusty-sage-main {
+  background-color: var(--color-dusty-sage-bg);
 }
 
 .bg-natural-medium {

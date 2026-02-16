@@ -3,12 +3,12 @@ import { getProductBySlug, getLotsByProductSlug } from "@/lib/dataService";
 export default async function ProductDetail({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const p = getProductBySlug(slug);
-  if (!p) return <main className="p-6 min-h-screen bg-natural-light texture-linen"><div className="bg-warm-white rounded-xl p-8 text-center border-2 font-body" style={{borderColor: 'var(--color-warm-gray)', color: 'var(--color-text-primary)'}}>Not Found</div></main>;
+  if (!p) return <main className="p-6 min-h-screen texture-linen" style={{backgroundColor: '#C8BBA6'}}><div className="bg-warm-white rounded-xl p-8 text-center border-2 font-body" style={{borderColor: 'var(--color-warm-gray)', color: 'var(--color-text-primary)'}}>Not Found</div></main>;
 
   const lots = getLotsByProductSlug(p.slug);
 
   return (
-    <main className="mx-auto max-w-5xl p-6 min-h-screen bg-natural-light texture-linen">
+    <main className="mx-auto max-w-5xl p-6 min-h-screen texture-linen" style={{backgroundColor: '#C8BBA6'}}>
       <div className="bg-warm-white texture-ceramic rounded-xl p-8 mb-8 border-2" style={{borderColor: 'var(--color-warm-gray)'}}>
         <h1 className="text-3xl font-display font-semibold" style={{color: 'var(--color-text-primary)'}}>{p.name.en || p.name.zh}</h1>
         <div className="mt-1 text-sm font-body" style={{color: 'var(--color-text-secondary)'}}>{p.latinName}</div>

@@ -1,6 +1,6 @@
 export default function MarketPositionPage() {
   return (
-    <main className="min-h-screen bg-natural-light texture-linen">
+    <main className="min-h-screen texture-linen" style={{backgroundColor: '#C8BBA6'}}>
       {/* Hero Section */}
       <section className="relative py-20 px-6 bg-natural-taupe texture-wood">
         <div className="max-w-6xl mx-auto text-center">

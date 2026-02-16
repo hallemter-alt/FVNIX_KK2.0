@@ -41,7 +41,7 @@ function DocumentsContent() {
   });
 
   return (
-    <main className="mx-auto max-w-6xl p-6 min-h-screen bg-natural-light texture-linen">
+    <main className="mx-auto max-w-6xl p-6 min-h-screen texture-linen" style={{backgroundColor: '#C8BBA6'}}>
       <div className="bg-warm-white/95 texture-ceramic rounded-xl p-8 mb-8 border-2" style={{borderColor: 'var(--color-warm-gray)'}}>
         <h1 className="text-3xl font-display font-semibold" style={{color: 'var(--color-text-primary)'}}>Document Center</h1>
         <p className="mt-2 text-sm font-body" style={{color: 'var(--color-text-secondary)'}}>
