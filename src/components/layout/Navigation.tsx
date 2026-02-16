@@ -13,7 +13,7 @@ export default function Navigation() {
   const t = useTranslations("nav");
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-natural-light/95 backdrop-blur-md shadow-sm border-b border-stone-200">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md shadow-sm border-b" style={{backgroundColor: 'var(--color-warm-white)', borderColor: 'var(--color-warm-gray)'}}>
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -21,34 +21,34 @@ export default function Navigation() {
             <span className="text-2xl font-bold tracking-tight bg-gradient-to-r from-moss to-eucalyptus-fog bg-clip-text text-transparent" style={{ fontFamily: "'Cormorant Garamond', 'Noto Serif JP', serif" }}>
               FVNIX
             </span>
-            <span className="text-xs text-gray-600 hidden sm:inline tracking-wide uppercase" style={{ fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif", letterSpacing: '0.1em' }}>
+            <span className="text-xs hidden sm:inline tracking-wide uppercase" style={{color: 'var(--color-text-muted)', fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif", letterSpacing: '0.1em'}}>
               {t("tagline")}
             </span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-6">
-            <Link href={`/${locale}`} className="text-gray-700 hover:text-moss font-medium transition-colors text-sm tracking-wide" style={{ fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif" }}>
+            <Link href={`/${locale}`} className="font-medium transition-colors text-sm tracking-wide" style={{color: 'var(--color-text-primary)', fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif"}} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-sage)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--color-text-primary)'}>
               {t("home")}
             </Link>
-            <Link href={`/${locale}/about`} className="text-gray-700 hover:text-moss font-medium transition-colors text-sm tracking-wide" style={{ fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif" }}>
+            <Link href={`/${locale}/about`} className="font-medium transition-colors text-sm tracking-wide" style={{color: 'var(--color-text-primary)', fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif"}} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-sage)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--color-text-primary)'}>
               {t("about")}
             </Link>
-            <Link href={`/${locale}/products`} className="text-gray-700 hover:text-moss font-medium transition-colors text-sm tracking-wide" style={{ fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif" }}>
+            <Link href={`/${locale}/products`} className="font-medium transition-colors text-sm tracking-wide" style={{color: 'var(--color-text-primary)', fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif"}} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-sage)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--color-text-primary)'}>
               {t("products")}
             </Link>
-            <Link href={`/${locale}/documents`} className="text-gray-700 hover:text-moss font-medium transition-colors text-sm tracking-wide" style={{ fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif" }}>
+            <Link href={`/${locale}/documents`} className="font-medium transition-colors text-sm tracking-wide" style={{color: 'var(--color-text-primary)', fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif"}} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-sage)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--color-text-primary)'}>
               {t("documents")}
             </Link>
-            <Link href={`/${locale}/certifications`} className="text-gray-700 hover:text-moss font-medium transition-colors text-sm tracking-wide" style={{ fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif" }}>
+            <Link href={`/${locale}/certifications`} className="font-medium transition-colors text-sm tracking-wide" style={{color: 'var(--color-text-primary)', fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif"}} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-sage)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--color-text-primary)'}>
               {t("certifications")}
             </Link>
-            <Link href={`/${locale}/market-position`} className="text-gray-700 hover:text-moss font-medium transition-colors text-sm tracking-wide" style={{ fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif" }}>
+            <Link href={`/${locale}/market-position`} className="font-medium transition-colors text-sm tracking-wide" style={{color: 'var(--color-text-primary)', fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif"}} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-sage)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--color-text-primary)'}>
               {t("marketPosition")}
             </Link>
             <Link 
               href={`/${locale}/request`}
-              className="rounded-lg bg-gradient-to-r from-moss to-eucalyptus-fog px-5 py-2 text-white font-semibold hover:shadow-lg transition-all text-sm tracking-wide" style={{ fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif" }}
+              className="rounded-lg px-5 py-2 font-semibold hover:shadow-lg transition-all text-sm tracking-wide" style={{backgroundColor: 'var(--color-sage)', color: 'var(--color-text-light)', fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif"}}
             >
               {t("contact")}
             </Link>

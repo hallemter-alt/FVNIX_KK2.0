@@ -162,9 +162,9 @@ function ProductsContent() {
 
   return (
     <main className="mx-auto max-w-6xl p-6 min-h-screen bg-natural-light texture-linen">
-      <div className="bg-natural-medium/80 texture-ceramic rounded-xl p-8 mb-8 border border-stone-200">
-        <h1 className="text-3xl font-semibold text-gray-900">Essential Oils</h1>
-        <p className="mt-2 text-sm text-gray-700 opacity-90">
+      <div className="bg-warm-white/95 texture-ceramic rounded-xl p-8 mb-8 border-2" style={{borderColor: 'var(--color-warm-gray)'}}>
+        <h1 className="text-3xl font-display font-semibold" style={{color: 'var(--color-text-primary)'}}>Essential Oils</h1>
+        <p className="mt-2 text-sm font-body" style={{color: 'var(--color-text-secondary)'}}>
           Filter by series / origin / extraction / tags (multi-select). Shareable URLs.
         </p>
       </div>
@@ -178,7 +178,7 @@ function ProductsContent() {
         />
       </div>
 
-      <div className="mt-6 text-sm opacity-70">
+      <div className="mt-6 text-sm font-body" style={{color: 'var(--color-text-secondary)'}}>
         Results: <span className="font-medium">{filtered.length}</span> / {all.length}
       </div>
 
