@@ -6,7 +6,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6">About FVNIX</h1>
           <p className="text-2xl mb-4 opacity-90">
-            凤凰有限公司 · Fvnix LLC.
+            Fvnix LLC.
           </p>
           <p className="text-xl max-w-3xl mx-auto opacity-90">
             Premium Natural Ingredients - Elevated Goodness from Yunnan
@@ -182,7 +182,7 @@ export default function AboutPage() {
                 🏔️ Original Brand
               </h3>
               <h4 className="text-2xl font-bold text-green-800 mb-4">
-                「云南鲜品」 (Elevated Goodness)
+                Elevated Goodness
               </h4>
               <ul className="space-y-4 text-gray-800">
                 <li className="flex items-start">
@@ -290,10 +290,10 @@ export default function AboutPage() {
           </p>
           
           <div className="bg-natural-light/90 backdrop-blur rounded-xl p-8 mb-8 border border-stone-300">
-            <h3 className="text-2xl font-bold mb-4">FVNIX LLC · 凤凰有限公司</h3>
+            <h3 className="text-2xl font-bold mb-4">FVNIX LLC</h3>
             <div className="space-y-2">
               <p className="text-lg">
-                <strong>Contact:</strong> Ye Weizhou (叶 维舟)
+                <strong>Contact:</strong> Ye Weizhou
               </p>
               <p className="text-lg">
                 📞 <strong>TEL:</strong> +81-3-6914-3633
@@ -313,7 +313,6 @@ export default function AboutPage() {
           <div className="text-sm opacity-75 mb-4">
             <p><strong>Address:</strong></p>
             <p>〒171-0033 Tokyo, Toshima-ku, Takada 3-16-4 Golje Bldg. 6F</p>
-            <p>东京都豊島区高田 3-16-4 Golje 大楼 6F</p>
           </div>
 
           <a 

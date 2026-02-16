@@ -1,7 +1,7 @@
-export const locales = ["ja", "en", "zh-hant"] as const;
-// If you must keep Simplified Chinese (existing content/index), enable it:
-// export const locales = ["ja", "en", "zh-hant", "zh-hans"] as const;
+export const locales = ["en", "ja", "zh-hant"] as const;
+// Default language is English
+// Japanese and Traditional Chinese are also supported
 
-export const defaultLocale = "ja" as const;
+export const defaultLocale = "en" as const;
 
 export type AppLocale = (typeof locales)[number];

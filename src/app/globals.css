@@ -144,6 +144,9 @@
   --font-mono: var(--font-geist-mono);
   --font-display: var(--font-cormorant);
   --font-body: var(--font-montserrat);
+  --font-en: 'TAN Nightingale', 'Cormorant Garamond', 'Georgia', serif;
+  --font-ja: 'A-OTF Ryumin Pr6N', 'Ryumin', 'Yu Mincho', 'YuMincho', 'Hiragino Mincho ProN', 'MS Mincho', serif;
+  --font-zh: 'A-OTF Ryumin Pr6N', 'Ryumin', 'Noto Serif TC', 'Microsoft JhengHei', serif;
 }
 
 /* Typography utilities */
@@ -153,6 +156,19 @@
 
 .font-body {
   font-family: var(--font-montserrat), 'Noto Sans JP', sans-serif;
+}
+
+/* Language-specific fonts */
+.font-en {
+  font-family: var(--font-en);
+}
+
+.font-ja {
+  font-family: var(--font-ja);
+}
+
+.font-zh {
+  font-family: var(--font-zh);
 }
 
 @media (prefers-color-scheme: dark) {

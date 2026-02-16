@@ -16,7 +16,7 @@ export default function Home() {
                 Premium Natural Ingredients
               </p>
               <p className="mt-4 text-lg font-body leading-relaxed" style={{color: 'var(--color-text-secondary)'}}>
-                Elevated Goodness from Yunnan · 云南鲜品 带给您的生活
+                Elevated Goodness from Yunnan
               </p>
               <p className="mt-3 text-sm font-body max-w-2xl mx-auto" style={{color: 'var(--color-text-muted)'}}>
                 We bring natural fragrances and botanical essences from the mysterious highland "Shangri-La" 

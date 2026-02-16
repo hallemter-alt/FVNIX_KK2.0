@@ -7,7 +7,7 @@ export default getRequestConfig(async ({requestLocale}) => {
 
   // Ensure that a valid locale is used
   if (!locale || !locales.includes(locale as any)) {
-    locale = 'ja';
+    locale = 'en';
   }
 
   // Use static imports with @/ alias for Turbopack compatibility
@@ -20,7 +20,7 @@ export default getRequestConfig(async ({requestLocale}) => {
       case 'zh-hant':
         return (await import('@/messages/zh-hant.json')).default;
       default:
-        return (await import('@/messages/ja.json')).default;
+        return (await import('@/messages/en.json')).default;
     }
   })();
 
