@@ -20,10 +20,6 @@ export default function Footer() {
               Premium Natural Ingredients from Yunnan. Bringing elevated goodness 
               to the Japanese market with pure quality.
             </p>
-            <p className="text-sm">
-              凤凰有限公司<br/>
-              云南鲜品 · Elevated Goodness
-            </p>
           </div>
 
           {/* Quick Links */}
@@ -116,7 +112,7 @@ export default function Footer() {
           <div className="text-center">
             <h4 className="text-white font-semibold mb-2">Group Company</h4>
             <p className="text-sm mb-1">
-              <strong>Yunnan Summit Biotech Co., Ltd.</strong> (云南森美达生物科技股份有限公司)
+              <strong>Yunnan Summit Biotech Co., Ltd.</strong>
             </p>
             <p className="text-xs text-gray-400 max-w-2xl mx-auto">
               High-tech enterprise with 20+ years in natural fragrance raw materials. 
@@ -130,7 +126,7 @@ export default function Footer() {
         <div className="mt-8 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-400">
-              © 2024 FVNIX LLC (凤凰有限公司). All rights reserved.
+              © 2024 FVNIX LLC. All rights reserved.
             </p>
             <div className="flex items-center gap-6 text-sm text-gray-400">
               <span>🏔️ Pure & Natural</span>
