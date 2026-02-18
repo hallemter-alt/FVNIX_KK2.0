@@ -202,7 +202,7 @@ function ProductsContent() {
                   {p.series || "—"}
                 </div>
                 <div className={`mt-2 text-lg font-semibold ${categoryStyle.textColor}`}>
-                  {p.name.en || p.name.zh}
+                  {locale === 'ja' ? (p.name.ja || p.name.en) : locale === 'zh-hant' ? (p.name.zh || p.name.en) : p.name.en}
                 </div>
                 <div className={`text-sm ${categoryStyle.textColor} opacity-80 italic`}>
                   {p.latinName}

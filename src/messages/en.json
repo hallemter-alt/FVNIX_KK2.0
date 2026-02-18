@@ -325,5 +325,12 @@
       "partnership": "Request Partnership Info",
       "catalog": "Browse Product Catalog"
     }
+  },
+  "productDetail": {
+    "requestSample": "Request Sample",
+    "requestQuote": "Request Quote",
+    "documentsTitle": "Documents by Lot",
+    "lot": "LOT",
+    "notFound": "Not Found"
   }
 }

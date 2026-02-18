@@ -472,5 +472,12 @@
         "website": "🌐 www.fvnix.com"
       }
     }
+  },
+  "productDetail": {
+    "requestSample": "サンプルのご依頼",
+    "requestQuote": "お見積もりのご依頼",
+    "documentsTitle": "ロット別技術資料",
+    "lot": "ロット番号",
+    "notFound": "製品が見つかりません"
   }
 }
