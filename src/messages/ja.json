@@ -1,15 +1,457 @@
 {
   "common": {
-    "lang": { "ja": "日本語", "en": "English", "zhHant": "繁體中文" }
+    "lang": { 
+      "ja": "日本語", 
+      "en": "English", 
+      "zhHant": "繁體中文" 
+    }
   },
   "nav": {
     "home": "ホーム",
-    "about": "私たちについて",
-    "products": "製品",
-    "documents": "ドキュメント",
-    "certifications": "認証",
-    "marketPosition": "市場ポジション",
+    "about": "会社概要",
+    "products": "製品一覧",
+    "documents": "技術資料",
+    "certifications": "認証・品質",
+    "marketPosition": "市場優位性",
     "contact": "お問い合わせ",
-    "tagline": "プレミアム天然成分"
+    "tagline": "高品質天然原料"
+  },
+  "about": {
+    "hero": {
+      "title": "会社概要",
+      "subtitle": "雲南高原の天然資源を日本市場へ"
+    },
+    "message": {
+      "title": "私たちのメッセージ",
+      "description": "FVNIX合同会社は、雲南省の豊かな天然資源と日本市場を結ぶ架け橋として、高品質な精油・植物エキスをお届けしています。",
+      "features": {
+        "direct": {
+          "title": "直接取引の強み",
+          "description": "親会社である雲南森美達生物科技股份有限公司から直接仕入れることで、高品質を保ちながらコスト競争力のある価格を実現しています。"
+        },
+        "expertise": {
+          "title": "専門知識とサポート",
+          "description": "天然原料に精通した専門スタッフが、製品選定から技術サポートまで、日本語で丁寧に対応いたします。"
+        },
+        "quality": {
+          "title": "品質への こだわり",
+          "description": "すべての製品に完全なトレーサビリティと品質証明書を提供。安心してご利用いただけます。"
+        }
+      }
+    },
+    "background": {
+      "title": "設立背景",
+      "experience": {
+        "title": "25年以上の実績",
+        "description": "親会社は1998年設立以来、天然香料原料の研究開発・栽培・抽出・精製・国際貿易を一貫して行う、中国有数の天然香料メーカーです。"
+      },
+      "tokyo": {
+        "title": "東京拠点",
+        "description": "2024年、日本市場での事業展開を強化するため、東京・豊島区に拠点を設立。日本のお客様により迅速かつ細やかなサービスを提供しています。"
+      }
+    },
+    "mission": {
+      "title": "企業理念",
+      "description": "「自然の恵みを、純粋なかたちで」をモットーに、雲南高原の豊かな生態系が育む天然原料を、日本の産業発展に貢献する形でお届けすることを使命としています。"
+    },
+    "strengths": {
+      "title": "私たちの強み",
+      "items": {
+        "vertical": {
+          "title": "垂直統合サプライチェーン",
+          "description": "栽培から製品化まで一貫管理"
+        },
+        "certified": {
+          "title": "国際認証取得済み",
+          "description": "ISO 9001、HACCP、cGMP完備"
+        },
+        "market": {
+          "title": "世界トップシェア",
+          "description": "主要精油で世界市場をリード"
+        }
+      }
+    },
+    "business": {
+      "title": "事業の二本柱",
+      "brand": {
+        "title": "オリジナルブランド",
+        "items": {
+          "oils": "高品質精油（エッセンシャルオイル）",
+          "health": "健康食品・美容原料",
+          "coffee": "スペシャルティコーヒー",
+          "flowers": "高級生花・ドライフラワー"
+        }
+      },
+      "b2b": {
+        "title": "B2Bソリューション",
+        "items": {
+          "custom": "カスタム抽出・配合サービス",
+          "private": "プライベートブランド対応",
+          "bulk": "バルク供給（小ロット〜大量受注対応）",
+          "consulting": "原料選定・技術コンサルティング"
+        }
+      }
+    },
+    "categories": {
+      "title": "製品カテゴリー",
+      "oils": {
+        "title": "精油（エッセンシャルオイル）",
+        "description": "フローラル系、柑橘系、ハーブ系、ウッディ系、スパイス系、樹脂系"
+      },
+      "health": {
+        "title": "健康・美容食品",
+        "description": "植物エキス、機能性原料"
+      },
+      "coffee": {
+        "title": "スペシャルティコーヒー",
+        "description": "雲南高地産プレミアムコーヒー豆"
+      },
+      "flowers": {
+        "title": "高級生花",
+        "description": "生花、ドライフラワー"
+      }
+    },
+    "cta": {
+      "title": "お気軽にお問い合わせください",
+      "description": "製品に関するご質問、サンプルのご請求、お見積もりなど、お気軽にご連絡ください。",
+      "buttons": {
+        "products": "製品一覧を見る",
+        "contact": "お問い合わせフォーム"
+      },
+      "office": {
+        "title": "東京オフィス",
+        "address": "〒171-0033 東京都豊島区高田3-16-4 ゴルジェビル6F",
+        "contact": "担当：葉 維舟（イエ・ウェイジョウ）",
+        "phone": "TEL: 03-6914-3633",
+        "mobile": "携帯: 080-4363-2780",
+        "email": "info@fvnix.com",
+        "website": "www.fvnix.com"
+      }
+    }
+  },
+  "products": {
+    "hero": {
+      "title": "製品一覧",
+      "subtitle": "雲南高原産 高品質天然精油・植物エキス"
+    },
+    "filters": {
+      "search": "製品検索",
+      "series": "シリーズ",
+      "origin": "原産地",
+      "extraction": "抽出方法",
+      "tags": "特徴タグ",
+      "clear": "フィルタをクリア",
+      "allSeries": "すべてのシリーズ",
+      "allOrigins": "すべての原産地",
+      "allMethods": "すべての抽出方法"
+    },
+    "series": {
+      "floral": "フローラル系精油",
+      "citrus": "柑橘系精油",
+      "herbal": "ハーブ系精油",
+      "woody": "ウッディ系精油",
+      "spicy": "スパイス系精油",
+      "resinous": "樹脂系精油"
+    },
+    "card": {
+      "origin": "原産地",
+      "altitude": "標高",
+      "extraction": "抽出方法",
+      "viewDetails": "詳細を見る",
+      "requestSample": "サンプル請求"
+    }
+  },
+  "documents": {
+    "hero": {
+      "title": "技術資料センター",
+      "subtitle": "製品仕様書、分析証明書、安全データシートなど、各種技術文書をダウンロードいただけます"
+    },
+    "filters": {
+      "type": "資料種別",
+      "product": "製品",
+      "lot": "ロット番号",
+      "search": "キーワード検索",
+      "clear": "フィルタをクリア"
+    },
+    "types": {
+      "TDS": "製品仕様書 (TDS)",
+      "COA": "分析証明書 (COA)",
+      "GCMS": "GC-MS分析報告",
+      "SDS": "安全データシート (SDS)",
+      "MSDS": "化学物質安全性データシート (MSDS)"
+    },
+    "card": {
+      "product": "製品",
+      "lot": "ロット",
+      "download": "ダウンロード"
+    },
+    "results": "該当件数",
+    "noResults": "該当する資料が見つかりません。フィルタ条件を変更するか、キーワードを変えてお試しください。"
+  },
+  "certifications": {
+    "hero": {
+      "title": "認証・品質保証",
+      "subtitle": "国際基準に準拠した品質管理体制"
+    },
+    "intro": {
+      "title": "徹底した品質管理",
+      "description": "私たちは国際的な品質基準と認証を取得し、お客様に安心してご利用いただける製品をお届けしています。"
+    },
+    "certificates": {
+      "title": "取得認証",
+      "kosher": {
+        "title": "KOSHER認証",
+        "description": "ユダヤ教の食品規定に準拠"
+      },
+      "reach": {
+        "title": "REACH登録",
+        "description": "EU化学物質規制対応"
+      },
+      "haccp": {
+        "title": "HACCP認証",
+        "description": "食品安全管理システム"
+      },
+      "cgmp": {
+        "title": "cGMP認証",
+        "description": "医薬品製造品質管理基準"
+      },
+      "iso": {
+        "title": "ISO 9001認証",
+        "description": "品質マネジメントシステム"
+      },
+      "food": {
+        "title": "食品製造許可",
+        "description": "中国食品製造ライセンス"
+      },
+      "medicine": {
+        "title": "医薬品GMP",
+        "description": "医薬品製造管理基準"
+      },
+      "bio": {
+        "title": "農薬登録証",
+        "description": "生物農薬製造許可"
+      }
+    },
+    "qms": {
+      "title": "品質マネジメントシステム",
+      "traceability": {
+        "title": "完全トレーサビリティ",
+        "description": "種子から製品まで、すべての工程を追跡可能。どこで誰が作ったか明確にわかります。"
+      },
+      "standards": {
+        "title": "国際基準準拠",
+        "description": "ISO 9001、HACCP、cGMPなど、複数の国際認証を取得しています。"
+      },
+      "supply": {
+        "title": "サプライチェーン管理",
+        "description": "栽培から製造、出荷まで自社一貫管理。品質を最後まで保証します。"
+      }
+    },
+    "sustainability": {
+      "title": "サステナビリティへの取り組み",
+      "model": {
+        "title": "「企業＋農場＋農家」モデル",
+        "description": "地域農家と協働し、持続可能な農業と地域経済発展を両立しています。"
+      },
+      "base": {
+        "title": "自社管理栽培基地",
+        "description": "雲南省に10,000ムー（約670ヘクタール）超の自社栽培基地を保有。GMP準拠の最新設備で品質を守ります。"
+      }
+    },
+    "esg": {
+      "title": "ESGへの取り組み",
+      "environmental": {
+        "title": "環境保護 (E)",
+        "description": "生態系に配慮した栽培・抽出方法を採用。環境負荷の最小化に努めています。"
+      },
+      "social": {
+        "title": "社会貢献 (S)",
+        "description": "地域雇用の創出と農家の収入向上に貢献。地域社会との共生を大切にしています。"
+      },
+      "governance": {
+        "title": "企業統治 (G)",
+        "description": "透明性の高い経営と法令遵守を徹底。コンプライアンス体制を強化しています。"
+      }
+    },
+    "cta": {
+      "title": "品質証明書のダウンロード",
+      "description": "各種認証書や分析証明書は、技術資料センターからダウンロードいただけます。",
+      "buttons": {
+        "products": "製品一覧",
+        "documents": "技術資料をダウンロード"
+      }
+    }
+  },
+  "marketPosition": {
+    "hero": {
+      "title": "市場優位性",
+      "subtitle": "世界トップクラスの市場シェアと実績"
+    },
+    "share": {
+      "title": "世界市場シェア（2024年）",
+      "eucalyptus": {
+        "title": "ユーカリ油",
+        "share": "市場シェア 40%超",
+        "rank": "世界第1位"
+      },
+      "cinnamon": {
+        "title": "シナモン油",
+        "share": "市場シェア 約30%",
+        "rank": "世界トップ3"
+      },
+      "teatree": {
+        "title": "ティーツリー油",
+        "share": "市場シェア 約30%",
+        "rank": "世界第2位"
+      }
+    },
+    "performance": {
+      "title": "企業実績概要",
+      "customers": {
+        "title": "海外取引先",
+        "value": "100社以上",
+        "description": "世界中のF&F企業・化粧品メーカーとの取引実績"
+      },
+      "revenue": {
+        "title": "年間売上高",
+        "value": "5.14億円",
+        "description": "安定した事業基盤と成長性"
+      },
+      "experience": {
+        "title": "業界経験",
+        "value": "25年以上",
+        "description": "天然香料分野での長年の実績"
+      }
+    },
+    "partners": {
+      "title": "主要取引先",
+      "description": "世界トップクラスのフレーバー＆フレグランス企業との長期的なパートナーシップを築いています。",
+      "companies": {
+        "givaudan": "ジボダン（Givaudan）- スイス",
+        "dsm": "DSM-フィルメニッヒ（DSM-Firmenich）- スイス",
+        "iff": "IFF（International Flavors & Fragrances）- アメリカ",
+        "mane": "マーネ（Mane）- フランス",
+        "robertet": "ロベルテ（Robertet）- フランス",
+        "more": "その他、世界100社以上のグローバル企業と取引"
+      }
+    },
+    "advantages": {
+      "title": "競争優位性",
+      "scale": {
+        "title": "生産規模",
+        "description": "雲南省最大級の精油抽出設備と自社栽培基地を保有"
+      },
+      "quality": {
+        "title": "品質管理",
+        "description": "GMP準拠の連続自動化抽出設備による安定品質"
+      },
+      "supply": {
+        "title": "供給能力",
+        "description": "自社農場により安定供給と競争力のある価格を実現"
+      }
+    }
+  },
+  "request": {
+    "hero": {
+      "title": "お問い合わせ・サンプル請求",
+      "subtitle": "製品に関するご質問やサンプルのご請求は、こちらのフォームからお気軽にお送りください"
+    },
+    "form": {
+      "type": {
+        "label": "お問い合わせ種別",
+        "sample": "サンプル請求",
+        "quote": "お見積もり依頼",
+        "inquiry": "製品に関するお問い合わせ",
+        "other": "その他"
+      },
+      "company": {
+        "label": "会社名",
+        "placeholder": "株式会社○○○"
+      },
+      "name": {
+        "label": "お名前",
+        "placeholder": "山田 太郎"
+      },
+      "email": {
+        "label": "メールアドレス",
+        "placeholder": "example@company.co.jp"
+      },
+      "phone": {
+        "label": "電話番号",
+        "placeholder": "03-1234-5678"
+      },
+      "product": {
+        "label": "対象製品（任意）",
+        "placeholder": "ラベンダー精油、ユーカリ油など"
+      },
+      "message": {
+        "label": "お問い合わせ内容",
+        "placeholder": "サンプルの用途、必要な数量、納期のご希望などをご記入ください"
+      },
+      "submit": "送信する",
+      "submitting": "送信中...",
+      "success": "お問い合わせを受け付けました。担当者より2営業日以内にご連絡いたします。",
+      "error": "送信に失敗しました。お手数ですが、メールまたはお電話にてご連絡ください。"
+    },
+    "alternative": {
+      "title": "お電話・メールでのお問い合わせ",
+      "description": "お急ぎの場合は、直接お電話またはメールにてご連絡ください。",
+      "phone": "TEL: 03-6914-3633",
+      "mobile": "携帯: 080-4363-2780",
+      "email": "info@fvnix.com",
+      "hours": "受付時間：平日 9:00〜18:00"
+    },
+    "office": {
+      "title": "東京オフィス",
+      "address": "〒171-0033",
+      "address2": "東京都豊島区高田3-16-4",
+      "address3": "ゴルジェビル6F",
+      "access": "JR山手線・西武池袋線・東京メトロ副都心線「池袋駅」より徒歩8分"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "FVNIX合同会社",
+      "description": "雲南高原の高品質天然原料を日本市場へ。純粋な品質でお届けします。"
+    },
+    "quickLinks": {
+      "title": "サイトマップ",
+      "about": "会社概要",
+      "products": "製品一覧",
+      "documents": "技術資料",
+      "certifications": "認証・品質",
+      "marketPosition": "市場優位性",
+      "contact": "お問い合わせ"
+    },
+    "categories": {
+      "title": "製品カテゴリー",
+      "floral": "🌸 フローラル系精油",
+      "citrus": "🍋 柑橘系精油",
+      "herbal": "🌿 ハーブ系精油",
+      "woody": "🌲 ウッディ系精油",
+      "spicy": "🌶️ スパイス系精油",
+      "resinous": "🍯 樹脂系精油"
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "office": "東京オフィス",
+      "address": "〒171-0033 東京都豊島区高田3-16-4 ゴルジェビル6F",
+      "representative": "担当：葉 維舟",
+      "phone": "📞 TEL: 03-6914-3633",
+      "mobile": "📱 携帯: 080-4363-2780",
+      "email": "📧 info@fvnix.com",
+      "website": "🌐 www.fvnix.com"
+    },
+    "group": {
+      "title": "グループ会社",
+      "name": "雲南森美達生物科技股份有限公司",
+      "description": "天然香料原料分野で20年以上の実績を持つハイテク企業。研究開発・栽培・抽出・精製・国際貿易を一貫して行い、世界のトップブランドに高品質原料を供給しています。"
+    },
+    "bottom": {
+      "copyright": "© 2024 FVNIX合同会社 All rights reserved.",
+      "pure": "🏔️ 純粋・天然",
+      "quality": "✨ 高品質",
+      "sustainable": "🌿 持続可能"
+    }
   }
 }
