@@ -1,9 +1,9 @@
 {
   "common": {
-    "lang": { 
-      "ja": "日本語", 
-      "en": "English", 
-      "zhHant": "繁體中文" 
+    "lang": {
+      "ja": "日本語",
+      "en": "English",
+      "zhHant": "繁體中文"
     }
   },
   "nav": {
@@ -85,6 +85,51 @@
         "email": "📧 info@fvnix.com",
         "website": "🌐 www.fvnix.com"
       }
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "FVNIX LLC",
+      "description": "Premium Natural Ingredients from Yunnan. Bringing elevated goodness to the Japanese market with pure quality."
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "about": "About Us",
+      "products": "Products",
+      "documents": "Documents",
+      "certifications": "Certifications",
+      "marketPosition": "Market Position",
+      "contact": "Contact Us"
+    },
+    "categories": {
+      "title": "Product Categories",
+      "floral": "🌸 Floral Essential Oils",
+      "citrus": "🍋 Citrus Essential Oils",
+      "herbal": "🌿 Herbal Essential Oils",
+      "woody": "🌲 Woody Essential Oils",
+      "spicy": "🌶️ Spicy Essential Oils",
+      "resinous": "🍯 Resinous Essential Oils"
+    },
+    "contact": {
+      "title": "Contact Information",
+      "office": "Tokyo Office",
+      "address": "〒171-0033 Tokyo, Toshima-ku, Takada 3-16-4 Golje Bldg. 6F",
+      "representative": "Contact: Ye Weizhou",
+      "phone": "📞 TEL: +81-3-6914-3633",
+      "mobile": "📱 Mobile: +81-80-4363-2780",
+      "email": "📧 info@fvnix.com",
+      "website": "🌐 www.fvnix.com"
+    },
+    "group": {
+      "title": "Group Company",
+      "name": "Yunnan Summit Biotech Co., Ltd.",
+      "description": "High-tech enterprise with 20+ years in natural fragrance raw materials. Integrated R&D, cultivation, extraction, refining, and international trade. Supplying high-quality raw materials to global top brands."
+    },
+    "bottom": {
+      "copyright": "© 2024 FVNIX LLC. All rights reserved.",
+      "pure": "🏔️ Pure & Natural",
+      "quality": "✨ High Quality",
+      "sustainable": "🌿 Sustainable"
     }
   }
 }
