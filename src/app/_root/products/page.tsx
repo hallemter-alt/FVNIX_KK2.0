@@ -1,8 +1,9 @@
 "use client";
 
 import { Suspense } from "react";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useParams } from "next/navigation";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import Filters from "@/components/products/Filters";
 import { getAllProducts } from "@/lib/dataService";
 
@@ -105,6 +106,9 @@ function getCategoryTextClass(series: string): string {
 
 function ProductsContent() {
   const searchParams = useSearchParams();
+  const params = useParams();
+  const locale = (params?.locale as string) || "en";
+  const t = useTranslations("products");
   const all = getAllProducts();
 
   // Generate filter options from existing data
@@ -163,9 +167,9 @@ function ProductsContent() {
   return (
     <main className="mx-auto max-w-6xl p-6 min-h-screen texture-linen" style={{backgroundColor: '#C8BBA6'}}>
       <div className="bg-warm-white/95 texture-ceramic rounded-xl p-8 mb-8 border-2" style={{borderColor: 'var(--color-warm-gray)'}}>
-        <h1 className="text-3xl font-display font-semibold" style={{color: 'var(--color-text-primary)'}}>Essential Oils</h1>
+        <h1 className="text-3xl font-display font-semibold" style={{color: 'var(--color-text-primary)'}}>{t("hero.title")}</h1>
         <p className="mt-2 text-sm font-body" style={{color: 'var(--color-text-secondary)'}}>
-          Filter by series / origin / extraction / tags (multi-select). Shareable URLs.
+          {t("hero.subtitle")}
         </p>
       </div>
 
@@ -179,7 +183,7 @@ function ProductsContent() {
       </div>
 
       <div className="mt-6 text-sm font-body" style={{color: 'var(--color-text-secondary)'}}>
-        Results: <span className="font-medium">{filtered.length}</span> / {all.length}
+        {t("card.results")}: <span className="font-medium">{filtered.length}</span> / {all.length}
       </div>
 
       <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -189,7 +193,7 @@ function ProductsContent() {
           return (
             <Link 
               key={p.slug} 
-              href={`/products/${p.slug}`} 
+              href={`/${locale}/products/${p.slug}`} 
               className={`rounded-2xl ${categoryStyle.card} ${categoryStyle.border} p-5 hover:shadow-lg transition-all product-card relative overflow-hidden`}
             >
               {/* Content wrapper with better contrast */}
@@ -204,7 +208,7 @@ function ProductsContent() {
                   {p.latinName}
                 </div>
                 <div className={`mt-3 text-xs ${categoryStyle.textColor} opacity-70`}>
-                  {p.origin} · {p.altitude} · {p.extraction}
+                  {t("card.origin")}: {p.origin} · {t("card.altitude")}: {p.altitude} · {t("card.extraction")}: {p.extraction}
                 </div>
 
                 {p.tags?.length ? (
@@ -230,8 +234,8 @@ function ProductsContent() {
       </div>
 
       {filtered.length === 0 && (
-        <div className="mt-10 rounded-2xl bg-natural-warm texture-stone border border-stone-200 p-6 text-sm text-gray-700">
-          No results. Try clearing filters or changing keywords.
+        <div className="mt-10 rounded-2xl bg-natural-warm texture-stone border-2 p-6 text-sm" style={{borderColor: 'var(--color-warm-gray)', color: 'var(--color-text-secondary)'}}>
+          {t("noResults")}
         </div>
       )}
     </main>
