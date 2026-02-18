@@ -1,3 +1,10 @@
+#!/bin/bash
+
+echo "🔄 Translating remaining pages..."
+
+# Documents page
+echo "📄 Processing Documents page..."
+cat > src/app/_root/documents/page_new.tsx << 'DOCS'
 "use client";
 
 import { Suspense } from "react";
@@ -105,3 +112,8 @@ export default function DocumentsPage() {
     </Suspense>
   );
 }
+DOCS
+
+mv src/app/_root/documents/page_new.tsx src/app/_root/documents/page.tsx
+echo "✅ Documents page translated"
+

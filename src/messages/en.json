@@ -144,5 +144,17 @@
       "results": "Results"
     },
     "noResults": "No products found. Try adjusting your filters or search keywords."
+  },
+  "documents": {
+    "hero": {
+      "title": "Document Center",
+      "subtitle": "Filter by type, product, or lot number. Multi-select supported. Shareable URLs."
+    },
+    "card": {
+      "product": "Product",
+      "lot": "LOT"
+    },
+    "results": "Results",
+    "noResults": "No documents found. Try adjusting your filters or search keywords."
   }
 }
