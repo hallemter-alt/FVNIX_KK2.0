@@ -1,6 +1,10 @@
 {
   "common": {
-    "lang": { "ja": "日本語", "en": "English", "zhHant": "繁體中文" }
+    "lang": { 
+      "ja": "日本語", 
+      "en": "English", 
+      "zhHant": "繁體中文" 
+    }
   },
   "nav": {
     "home": "Home",
@@ -11,5 +15,76 @@
     "marketPosition": "Market Position",
     "contact": "Contact Us",
     "tagline": "Premium Natural Ingredients"
+  },
+  "home": {
+    "hero": {
+      "title": "FVNIX",
+      "subtitle": "Premium Natural Ingredients",
+      "tagline": "Elevated Goodness from Yunnan",
+      "description": "We bring natural fragrances and botanical essences from the mysterious highland \"Shangri-La\" to the Japanese market with pure quality.",
+      "cta": {
+        "products": "Browse Essential Oils",
+        "documents": "Technical Documents",
+        "about": "About Us"
+      }
+    },
+    "values": {
+      "title": "Pure & Natural from Yunnan",
+      "subtitle": "A Gift of Life from the \"Roof of the World\"",
+      "cards": {
+        "altitude": {
+          "title": "High Altitude Excellence",
+          "description": "From Yunnan's Shangri-La plateau (2800-3400m), where diverse ecosystems create the \"Kingdom of Plants\" with unique natural power."
+        },
+        "quality": {
+          "title": "Premium Quality",
+          "description": "ISO 9001, HACCP, cGMP certified. High-quality agricultural products with complete traceability and international standards."
+        },
+        "sustainability": {
+          "title": "Sustainable Sourcing",
+          "description": "\"Company + Farm + Farmers\" model ensures ecological protection and rural revitalization through traceable supply chains."
+        }
+      }
+    },
+    "why": {
+      "title": "Why Choose FVNIX",
+      "subtitle": "Connecting Yunnan's Natural Treasures with Global Markets",
+      "features": {
+        "leader": {
+          "title": "🏆 Global Market Leader",
+          "items": {
+            "eucalyptus": "Global No.1: Eucalyptus Oil (40%+ market share)",
+            "cinnamon": "Global Top 3: Cinnamon Oil (30%)",
+            "teatree": "Global Top 2: Tea Tree Oil (30%)"
+          }
+        },
+        "trusted": {
+          "title": "🤝 Trusted by Industry Giants",
+          "description": "Long-term supplier to Givaudan, DSM-Firmenich, IFF, Mane, Robertet and 100+ global partners with 25+ years of experience."
+        },
+        "traceability": {
+          "title": "📊 Complete Traceability",
+          "description": "From seed cultivation to extraction and packaging - full supply chain management with visible producers and transparent quality control."
+        },
+        "technology": {
+          "title": "🔬 Advanced Technology",
+          "description": "GMP-compliant continuous automated extraction facilities with 10,000+ mu (670+ hectares) of self-managed cultivation bases in Yunnan highlands."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Experience Premium Natural Ingredients?",
+      "description": "Contact our Tokyo office team for free samples, quotations, and product specifications.",
+      "buttons": {
+        "sample": "Request Free Samples",
+        "contact": "Contact Us"
+      },
+      "contact": {
+        "phone": "📞 TEL: +81-3-6914-3633",
+        "mobile": "📱 Mobile: +81-80-4363-2780",
+        "email": "📧 info@fvnix.com",
+        "website": "🌐 www.fvnix.com"
+      }
+    }
   }
 }
