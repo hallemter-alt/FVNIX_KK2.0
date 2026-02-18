@@ -156,5 +156,174 @@
     },
     "results": "Results",
     "noResults": "No documents found. Try adjusting your filters or search keywords."
+  },
+  "request": {
+    "hero": {
+      "titleSample": "Request Sample",
+      "titleQuote": "Request Quote",
+      "product": "Product"
+    },
+    "form": {
+      "email": "Email",
+      "company": "Company",
+      "message": "Message",
+      "submit": "Submit",
+      "submitted": "Submitted",
+      "failed": "Failed"
+    },
+    "loading": {
+      "title": "Request",
+      "text": "Loading..."
+    }
+  },
+  "certifications": {
+    "hero": {
+      "title": "Quality Assurance & Sustainability",
+      "subtitle": "International Certifications & Sustainable Practices"
+    },
+    "certifications": {
+      "title": "International Certifications",
+      "items": {
+        "kosher": {
+          "name": "KOSHER",
+          "description": "Kosher Food Certification"
+        },
+        "reach": {
+          "name": "REACH",
+          "description": "EU Chemical Substance Registration"
+        },
+        "haccp": {
+          "name": "HACCP",
+          "description": "Food Safety Management System"
+        },
+        "cgmp": {
+          "name": "cGMP",
+          "description": "Pharmaceutical Good Manufacturing Practice"
+        },
+        "iso9001": {
+          "name": "ISO 9001",
+          "description": "Quality Management System"
+        },
+        "foodLicense": {
+          "name": "Food License",
+          "description": "Food Production Permit"
+        },
+        "medicinalGmp": {
+          "name": "Medicinal GMP",
+          "description": "Eucalyptus Oil Pharmaceutical Standard"
+        },
+        "biopesticide": {
+          "name": "Biopesticide",
+          "description": "Biological Pesticide License"
+        }
+      }
+    },
+    "qualitySystem": {
+      "title": "Quality Management System",
+      "items": {
+        "traceability": {
+          "title": "Complete Traceability",
+          "description": "From seed to finished product, achieving highly transparent management. All production processes are fully traceable, ensuring peace of mind."
+        },
+        "standards": {
+          "title": "International Standards",
+          "description": "Strictly comply with quality standards recognized by global markets, providing customers with safe and high-quality products."
+        },
+        "supplyChain": {
+          "title": "Full Supply Chain",
+          "description": "From cultivation, extraction, refining to shipping - integrated management within the group ensures continuous stable high quality."
+        }
+      }
+    },
+    "sustainability": {
+      "title": "Sustainability Commitment",
+      "farmModel": {
+        "title": "\"Company + Farm + Farmers\" Model",
+        "description": "A win-win model where the company provides technology and seedlings, and farmers are responsible for cultivation. This achieves harmonious coexistence between ecological protection and rural revitalization.",
+        "benefits": {
+          "tech": "Technology Transfer: Providing advanced cultivation techniques",
+          "trade": "Fair Trade: Ensuring fair compensation for farmers",
+          "ecology": "Ecological Balance: Protecting natural ecosystems"
+        }
+      },
+      "bases": {
+        "title": "Self-Managed Cultivation Bases",
+        "scale": "10,000+ Mu (670+ Hectares)",
+        "scaleDescription": "Tea Tree cultivation scale in Yunnan highlands",
+        "facilities": "Advanced Facilities",
+        "facilitiesDescription": "Continuous automated extraction equipment compliant with GMP standards ensures high quality",
+        "commitment": "Green · Natural · Sustainable",
+        "commitmentDescription": "Our commitment to environmental stewardship and long-term sustainability"
+      }
+    },
+    "esg": {
+      "title": "ESG Commitment",
+      "subtitle": "We align with global ESG (Environmental, Social, Governance) standards, creating value for all stakeholders while protecting our planet for future generations.",
+      "environmental": {
+        "title": "Environmental",
+        "description": "Sustainable farming, biodiversity protection, carbon footprint reduction"
+      },
+      "social": {
+        "title": "Social",
+        "description": "Fair trade, community development, farmer welfare"
+      },
+      "governance": {
+        "title": "Governance",
+        "description": "Transparency, ethical practices, regulatory compliance"
+      }
+    },
+    "cta": {
+      "title": "Quality You Can Trust",
+      "subtitle": "Backed by international certifications and sustainable practices",
+      "viewProducts": "View Our Products",
+      "downloadCertificates": "Download Certificates"
+    }
+  },
+  "marketPosition": {
+    "hero": {
+      "title": "Market Position & Performance",
+      "subtitle": "Global Leadership in Natural Essential Oils"
+    },
+    "marketShare": {
+      "title": "Global Market Share (2024)",
+      "eucalyptus": {
+        "rank": "GLOBAL NO.1",
+        "name": "Eucalyptus Oil Series",
+        "share": "40%+",
+        "shareLabel": "Market Share"
+      },
+      "cinnamon": {
+        "rank": "GLOBAL TOP 3",
+        "name": "Cinnamon Oil Series",
+        "share": "~30%",
+        "shareLabel": "Market Share"
+      },
+      "teaTree": {
+        "rank": "GLOBAL TOP 2",
+        "name": "Tea Tree Oil Series",
+        "share": "~30%",
+        "shareLabel": "Market Share"
+      }
+    },
+    "performance": {
+      "title": "Corporate Performance Overview",
+      "customers": "Annual Overseas Customers",
+      "revenue": "Consolidated Revenue (2024)",
+      "experience": "Years of Experience"
+    },
+    "clients": {
+      "title": "Trusted by Global Industry Leaders",
+      "givaudan": "World's leading F&F company",
+      "dsm": "Global nutrition & beauty leader",
+      "iff": "International Flavors & Fragrances",
+      "mane": "French fragrance house",
+      "robertet": "Natural ingredients producer",
+      "others": "Other Global Partners"
+    },
+    "cta": {
+      "title": "Join Our Global Network",
+      "partnership": "Request Partnership Info",
+      "catalog": "Browse Product Catalog"
+    }
   }
 }

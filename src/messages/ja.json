@@ -1,9 +1,9 @@
 {
   "common": {
-    "lang": { 
-      "ja": "日本語", 
-      "en": "English", 
-      "zhHant": "繁體中文" 
+    "lang": {
+      "ja": "日本語",
+      "en": "English",
+      "zhHant": "繁體中文"
     }
   },
   "nav": {
@@ -190,223 +190,171 @@
   },
   "certifications": {
     "hero": {
-      "title": "認証・品質保証",
-      "subtitle": "国際基準に準拠した品質管理体制"
+      "title": "品質保証と持続可能性",
+      "subtitle": "国際認証と持続可能な取り組み"
     },
-    "intro": {
-      "title": "徹底した品質管理",
-      "description": "私たちは国際的な品質基準と認証を取得し、お客様に安心してご利用いただける製品をお届けしています。"
-    },
-    "certificates": {
-      "title": "取得認証",
-      "kosher": {
-        "title": "KOSHER認証",
-        "description": "ユダヤ教の食品規定に準拠"
-      },
-      "reach": {
-        "title": "REACH登録",
-        "description": "EU化学物質規制対応"
-      },
-      "haccp": {
-        "title": "HACCP認証",
-        "description": "食品安全管理システム"
-      },
-      "cgmp": {
-        "title": "cGMP認証",
-        "description": "医薬品製造品質管理基準"
-      },
-      "iso": {
-        "title": "ISO 9001認証",
-        "description": "品質マネジメントシステム"
-      },
-      "food": {
-        "title": "食品製造許可",
-        "description": "中国食品製造ライセンス"
-      },
-      "medicine": {
-        "title": "医薬品GMP",
-        "description": "医薬品製造管理基準"
-      },
-      "bio": {
-        "title": "農薬登録証",
-        "description": "生物農薬製造許可"
+    "certifications": {
+      "title": "国際認証",
+      "items": {
+        "kosher": {
+          "name": "コーシャ認証",
+          "description": "コーシャ食品認証"
+        },
+        "reach": {
+          "name": "REACH",
+          "description": "EU化学物質登録"
+        },
+        "haccp": {
+          "name": "HACCP",
+          "description": "食品安全管理システム"
+        },
+        "cgmp": {
+          "name": "cGMP",
+          "description": "医薬品適正製造規範"
+        },
+        "iso9001": {
+          "name": "ISO 9001",
+          "description": "品質マネジメントシステム"
+        },
+        "foodLicense": {
+          "name": "食品製造許可",
+          "description": "食品生産許可証"
+        },
+        "medicinalGmp": {
+          "name": "医薬品GMP",
+          "description": "ユーカリ油医薬品基準"
+        },
+        "biopesticide": {
+          "name": "生物農薬",
+          "description": "生物農薬登録"
+        }
       }
     },
-    "qms": {
-      "title": "品質マネジメントシステム",
-      "traceability": {
-        "title": "完全トレーサビリティ",
-        "description": "種子から製品まで、すべての工程を追跡可能。どこで誰が作ったか明確にわかります。"
-      },
-      "standards": {
-        "title": "国際基準準拠",
-        "description": "ISO 9001、HACCP、cGMPなど、複数の国際認証を取得しています。"
-      },
-      "supply": {
-        "title": "サプライチェーン管理",
-        "description": "栽培から製造、出荷まで自社一貫管理。品質を最後まで保証します。"
+    "qualitySystem": {
+      "title": "品質管理システム",
+      "items": {
+        "traceability": {
+          "title": "完全なトレーサビリティ",
+          "description": "種から製品まで、高度に透明性のある管理を実現。すべての生産工程が完全に追跡可能で、安心してご利用いただけます。"
+        },
+        "standards": {
+          "title": "国際基準",
+          "description": "世界市場で認められた品質基準を厳守し、お客様に安全で高品質な製品を提供いたします。"
+        },
+        "supplyChain": {
+          "title": "完全サプライチェーン",
+          "description": "栽培から抽出、精製、出荷まで、グループ内で一貫管理することで、継続的に安定した高品質を確保しております。"
+        }
       }
     },
     "sustainability": {
-      "title": "サステナビリティへの取り組み",
-      "model": {
-        "title": "「企業＋農場＋農家」モデル",
-        "description": "地域農家と協働し、持続可能な農業と地域経済発展を両立しています。"
+      "title": "持続可能性への取り組み",
+      "farmModel": {
+        "title": "「企業+農場+農家」モデル",
+        "description": "企業が技術と苗木を提供し、農家が栽培を担当するウィンウィンモデル。生態保護と農村振興の調和的共存を実現しております。",
+        "benefits": {
+          "tech": "技術移転：先進的な栽培技術の提供",
+          "trade": "フェアトレード：農家への公正な報酬の保証",
+          "ecology": "生態バランス：自然生態系の保護"
+        }
       },
-      "base": {
+      "bases": {
         "title": "自社管理栽培基地",
-        "description": "雲南省に10,000ムー（約670ヘクタール）超の自社栽培基地を保有。GMP準拠の最新設備で品質を守ります。"
+        "scale": "10,000ムー以上（670ヘクタール以上）",
+        "scaleDescription": "雲南高原におけるティーツリー栽培規模",
+        "facilities": "最先端設備",
+        "facilitiesDescription": "GMP基準に準拠した連続自動抽出設備により高品質を確保",
+        "commitment": "グリーン・ナチュラル・サステナブル",
+        "commitmentDescription": "環境保全と長期的持続可能性へのコミットメント"
       }
     },
     "esg": {
-      "title": "ESGへの取り組み",
+      "title": "ESGへのコミットメント",
+      "subtitle": "グローバルなESG（環境・社会・ガバナンス）基準に準拠し、すべてのステークホルダーに価値を創造しながら、未来の世代のために地球を守ります。",
       "environmental": {
-        "title": "環境保護 (E)",
-        "description": "生態系に配慮した栽培・抽出方法を採用。環境負荷の最小化に努めています。"
+        "title": "環境",
+        "description": "持続可能な農業、生物多様性保護、カーボンフットプリント削減"
       },
       "social": {
-        "title": "社会貢献 (S)",
-        "description": "地域雇用の創出と農家の収入向上に貢献。地域社会との共生を大切にしています。"
+        "title": "社会",
+        "description": "フェアトレード、地域社会の発展、農家の福祉"
       },
       "governance": {
-        "title": "企業統治 (G)",
-        "description": "透明性の高い経営と法令遵守を徹底。コンプライアンス体制を強化しています。"
+        "title": "ガバナンス",
+        "description": "透明性、倫理的実践、規制遵守"
       }
     },
     "cta": {
-      "title": "品質証明書のダウンロード",
-      "description": "各種認証書や分析証明書は、技術資料センターからダウンロードいただけます。",
-      "buttons": {
-        "products": "製品一覧",
-        "documents": "技術資料をダウンロード"
-      }
+      "title": "信頼できる品質",
+      "subtitle": "国際認証と持続可能な取り組みに裏付けられた品質",
+      "viewProducts": "製品を見る",
+      "downloadCertificates": "認証書をダウンロード"
     }
   },
   "marketPosition": {
     "hero": {
-      "title": "市場優位性",
-      "subtitle": "世界トップクラスの市場シェアと実績"
+      "title": "市場ポジションと実績",
+      "subtitle": "天然精油における世界的リーダーシップ"
     },
-    "share": {
+    "marketShare": {
       "title": "世界市場シェア（2024年）",
       "eucalyptus": {
-        "title": "ユーカリ油",
-        "share": "市場シェア 40%超",
-        "rank": "世界第1位"
+        "rank": "世界No.1",
+        "name": "ユーカリ油シリーズ",
+        "share": "40%以上",
+        "shareLabel": "市場シェア"
       },
       "cinnamon": {
-        "title": "シナモン油",
-        "share": "市場シェア 約30%",
-        "rank": "世界トップ3"
+        "rank": "世界トップ3",
+        "name": "シナモン油シリーズ",
+        "share": "約30%",
+        "shareLabel": "市場シェア"
       },
-      "teatree": {
-        "title": "ティーツリー油",
-        "share": "市場シェア 約30%",
-        "rank": "世界第2位"
+      "teaTree": {
+        "rank": "世界トップ2",
+        "name": "ティーツリー油シリーズ",
+        "share": "約30%",
+        "shareLabel": "市場シェア"
       }
     },
     "performance": {
       "title": "企業実績概要",
-      "customers": {
-        "title": "海外取引先",
-        "value": "100社以上",
-        "description": "世界中のF&F企業・化粧品メーカーとの取引実績"
-      },
-      "revenue": {
-        "title": "年間売上高",
-        "value": "5.14億円",
-        "description": "安定した事業基盤と成長性"
-      },
-      "experience": {
-        "title": "業界経験",
-        "value": "25年以上",
-        "description": "天然香料分野での長年の実績"
-      }
+      "customers": "年間海外顧客数",
+      "revenue": "連結売上高（2024年）",
+      "experience": "事業年数"
     },
-    "partners": {
-      "title": "主要取引先",
-      "description": "世界トップクラスのフレーバー＆フレグランス企業との長期的なパートナーシップを築いています。",
-      "companies": {
-        "givaudan": "ジボダン（Givaudan）- スイス",
-        "dsm": "DSM-フィルメニッヒ（DSM-Firmenich）- スイス",
-        "iff": "IFF（International Flavors & Fragrances）- アメリカ",
-        "mane": "マーネ（Mane）- フランス",
-        "robertet": "ロベルテ（Robertet）- フランス",
-        "more": "その他、世界100社以上のグローバル企業と取引"
-      }
+    "clients": {
+      "title": "世界的業界リーダーから信頼されています",
+      "givaudan": "世界有数のF&F企業",
+      "dsm": "グローバル栄養・美容リーダー",
+      "iff": "国際香料大手",
+      "mane": "フランスの香料ハウス",
+      "robertet": "天然原料生産者",
+      "others": "その他世界のパートナー"
     },
-    "advantages": {
-      "title": "競争優位性",
-      "scale": {
-        "title": "生産規模",
-        "description": "雲南省最大級の精油抽出設備と自社栽培基地を保有"
-      },
-      "quality": {
-        "title": "品質管理",
-        "description": "GMP準拠の連続自動化抽出設備による安定品質"
-      },
-      "supply": {
-        "title": "供給能力",
-        "description": "自社農場により安定供給と競争力のある価格を実現"
-      }
+    "cta": {
+      "title": "グローバルネットワークに参加",
+      "partnership": "パートナーシップ情報のご依頼",
+      "catalog": "製品カタログを見る"
     }
   },
   "request": {
     "hero": {
-      "title": "お問い合わせ・サンプル請求",
-      "subtitle": "製品に関するご質問やサンプルのご請求は、こちらのフォームからお気軽にお送りください"
+      "titleSample": "サンプルのご依頼",
+      "titleQuote": "お見積もりのご依頼",
+      "product": "製品"
     },
     "form": {
-      "type": {
-        "label": "お問い合わせ種別",
-        "sample": "サンプル請求",
-        "quote": "お見積もり依頼",
-        "inquiry": "製品に関するお問い合わせ",
-        "other": "その他"
-      },
-      "company": {
-        "label": "会社名",
-        "placeholder": "株式会社○○○"
-      },
-      "name": {
-        "label": "お名前",
-        "placeholder": "山田 太郎"
-      },
-      "email": {
-        "label": "メールアドレス",
-        "placeholder": "example@company.co.jp"
-      },
-      "phone": {
-        "label": "電話番号",
-        "placeholder": "03-1234-5678"
-      },
-      "product": {
-        "label": "対象製品（任意）",
-        "placeholder": "ラベンダー精油、ユーカリ油など"
-      },
-      "message": {
-        "label": "お問い合わせ内容",
-        "placeholder": "サンプルの用途、必要な数量、納期のご希望などをご記入ください"
-      },
+      "email": "メールアドレス",
+      "company": "会社名",
+      "message": "お問い合わせ内容",
       "submit": "送信する",
-      "submitting": "送信中...",
-      "success": "お問い合わせを受け付けました。担当者より2営業日以内にご連絡いたします。",
-      "error": "送信に失敗しました。お手数ですが、メールまたはお電話にてご連絡ください。"
+      "submitted": "送信完了",
+      "failed": "送信に失敗しました"
     },
-    "alternative": {
-      "title": "お電話・メールでのお問い合わせ",
-      "description": "お急ぎの場合は、直接お電話またはメールにてご連絡ください。",
-      "phone": "TEL: 03-6914-3633",
-      "mobile": "携帯: 080-4363-2780",
-      "email": "info@fvnix.com",
-      "hours": "受付時間：平日 9:00〜18:00"
-    },
-    "office": {
-      "title": "東京オフィス",
-      "address": "〒171-0033",
-      "address2": "東京都豊島区高田3-16-4",
-      "address3": "ゴルジェビル6F",
-      "access": "JR山手線・西武池袋線・東京メトロ副都心線「池袋駅」より徒歩8分"
+    "loading": {
+      "title": "お問い合わせ",
+      "text": "読み込み中..."
     }
   },
   "footer": {
