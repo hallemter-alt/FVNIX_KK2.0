@@ -64,12 +64,36 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">{t("categories.title")}</h4>
             <ul className="space-y-2 text-sm">
-              <li>{t("categories.floral")}</li>
-              <li>{t("categories.citrus")}</li>
-              <li>{t("categories.herbal")}</li>
-              <li>{t("categories.woody")}</li>
-              <li>{t("categories.spicy")}</li>
-              <li>{t("categories.resinous")}</li>
+              <li>
+                <Link href={`/${locale}/products?series=floral`} className="hover:text-green-400 transition-colors">
+                  {t("categories.floral")}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/products?series=citrus`} className="hover:text-green-400 transition-colors">
+                  {t("categories.citrus")}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/products?series=herbal`} className="hover:text-green-400 transition-colors">
+                  {t("categories.herbal")}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/products?series=woody`} className="hover:text-green-400 transition-colors">
+                  {t("categories.woody")}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/products?series=spicy`} className="hover:text-green-400 transition-colors">
+                  {t("categories.spicy")}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/products?series=resinous`} className="hover:text-green-400 transition-colors">
+                  {t("categories.resinous")}
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -86,6 +110,7 @@ export default function Footer() {
               <div>
                 <p className="mb-1">{t("contact.representative")}</p>
                 <p>{t("contact.phone")}</p>
+                <p>{t("contact.fax")}</p>
                 <p>{t("contact.mobile")}</p>
               </div>
               <div>

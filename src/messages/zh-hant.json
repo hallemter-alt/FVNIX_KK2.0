@@ -431,20 +431,14 @@
     },
     "contact": {
       "title": "聯繫方式",
-      "address": "地址",
-      "addressValue": "東京都豐島區高田3-16-4 Golje Bld.6F",
-      "representative": "負責人",
-      "representativeValue": "葉維舟",
-      "tel": "電話",
-      "fax": "傳真",
-      "mobile": "手機",
-      "email": "郵箱",
-      "website": "網址",
       "office": "東京辦公室",
+      "address": "東京都豐島區高田3-16-4 Golje Bld.6F",
+      "representative": "負責人：葉維舟",
       "phone": "電話：03-6914-3633",
-      "faxNumber": "傳真：03-6457-3368",
-      "emailAddress": "郵箱：info@fvnixl.com",
-      "websiteUrl": "網址：Http://www.fvnix.com"
+      "fax": "傳真：03-6457-3368",
+      "mobile": "手機：080-4363-2780",
+      "email": "郵箱：info@fvnixl.com",
+      "website": "網址：Http://www.fvnix.com"
     },
     "groupCompany": {
       "title": "集團公司",
