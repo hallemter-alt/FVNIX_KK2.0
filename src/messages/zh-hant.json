@@ -80,10 +80,10 @@
         "contact": "聯繫我們"
       },
       "contact": {
-        "phone": "📞 電話：+81-3-6914-3633",
-        "mobile": "📱 手機：+81-80-4363-2780",
-        "email": "📧 info@fvnix.com",
-        "website": "🌐 www.fvnix.com"
+        "phone": "電話：03-6914-3633",
+        "fax": "傳真：03-6457-3368",
+        "email": "郵箱：info@fvnixl.com",
+        "website": "網址：Http://www.fvnix.com"
       }
     }
   },
@@ -115,7 +115,8 @@
   "about": {
     "hero": {
       "title": "關於FVNIX",
-      "subtitle": "頂級天然原料 - 來自雲南的卓越品質"
+      "subtitle": "FVNIX LLC.",
+      "tagline": "頂級天然原料 - 來自雲南的卓越品質"
     },
     "message": {
       "title": "我們的使命",
@@ -216,12 +217,12 @@
       },
       "office": {
         "title": "東京辦公室",
-        "address": "〒171-0033 東京都豐島區高田3-16-4 Golje大樓6樓",
+        "address": "東京都豐島區高田3-16-4 Golje Bld.6F",
         "contact": "負責人：葉維舟",
-        "phone": "📞 電話：+81-3-6914-3633",
-        "mobile": "📱 手機：+81-80-4363-2780",
-        "email": "📧 info@fvnix.com",
-        "website": "🌐 www.fvnix.com"
+        "phone": "電話：03-6914-3633",
+        "fax": "傳真：03-6457-3368",
+        "email": "郵箱：info@fvnixl.com",
+        "website": "網址：Http://www.fvnix.com"
       }
     }
   },
@@ -403,7 +404,7 @@
   },
   "footer": {
     "company": {
-      "title": "FVNIX有限公司",
+      "title": "FVNIX LLC.",
       "description": "頂級天然原料。\n以純淨品質將雲南大自然的恩惠帶到日本市場。"
     },
     "quickLinks": {
@@ -431,15 +432,19 @@
     "contact": {
       "title": "聯繫方式",
       "address": "地址",
-      "addressValue": "〒171-0033 東京都豐島區高田3-16-4 Golje大樓6樓",
+      "addressValue": "東京都豐島區高田3-16-4 Golje Bld.6F",
       "representative": "負責人",
       "representativeValue": "葉維舟",
       "tel": "電話",
+      "fax": "傳真",
       "mobile": "手機",
-      "email": "電郵",
-      "website": "網站",
+      "email": "郵箱",
+      "website": "網址",
       "office": "東京辦公室",
-      "phone": "📞 電話：+81-3-6914-3633"
+      "phone": "電話：03-6914-3633",
+      "faxNumber": "傳真：03-6457-3368",
+      "emailAddress": "郵箱：info@fvnixl.com",
+      "websiteUrl": "網址：Http://www.fvnix.com"
     },
     "groupCompany": {
       "title": "集團公司",
@@ -447,7 +452,7 @@
       "description": "集團母公司，負責原料種植、加工生產與研發。"
     },
     "bottom": {
-      "copyright": "© 2024 FVNIX有限公司。版權所有。",
+      "copyright": "© 2024 FVNIX LLC. 版權所有。",
       "pure": "純淨天然",
       "quality": "高品質",
       "sustainable": "永續發展"

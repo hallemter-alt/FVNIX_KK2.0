@@ -113,12 +113,13 @@
     "contact": {
       "title": "Contact Information",
       "office": "Tokyo Office",
-      "address": "〒171-0033 Tokyo, Toshima-ku, Takada 3-16-4 Golje Bldg. 6F",
+      "address": "Tokyo, Toshima-ku, Takada 3-16-4 Golje Bld.6F",
       "representative": "Contact: Ye Weizhou",
-      "phone": "📞 TEL: +81-3-6914-3633",
-      "mobile": "📱 Mobile: +81-80-4363-2780",
-      "email": "📧 info@fvnix.com",
-      "website": "🌐 www.fvnix.com"
+      "phone": "Phone: 03-6914-3633",
+      "fax": "FAX: 03-6457-3368",
+      "mobile": "Mobile: 080-4363-2780",
+      "email": "Email: info@fvnixl.com",
+      "website": "Http://www.fvnix.com"
     },
     "group": {
       "title": "Group Company",
