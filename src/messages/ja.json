@@ -158,8 +158,10 @@
       "altitude": "標高",
       "extraction": "抽出方法",
       "viewDetails": "詳細を見る",
-      "requestSample": "サンプル請求"
-    }
+      "requestSample": "サンプル請求",
+      "results": "検索結果"
+    },
+    "noResults": "結果が見つかりません。フィルター条件や検索キーワードを変更してお試しください。"
   },
   "documents": {
     "hero": {
