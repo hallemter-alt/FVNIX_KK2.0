@@ -115,96 +115,114 @@
   "about": {
     "hero": {
       "title": "關於FVNIX",
-      "subtitle": "FVNIX有限公司",
-      "tagline": "頂級天然原料 - 來自雲南的卓越品質"
+      "subtitle": "頂級天然原料 - 來自雲南的卓越品質"
     },
     "message": {
       "title": "我們的使命",
-      "subtitle": "來自「世界屋脊」的生命禮物",
-      "description": "我們從雲南高原（海拔2800～3400公尺）的香格里拉，以純淨品質將天然香料和植物精華帶到日本市場。"
-    },
-    "values": {
-      "pure": {
-        "title": "純淨天然",
-        "description": "來自雲南高海拔地區的純淨天然原料"
-      },
-      "quality": {
-        "title": "高品質",
-        "description": "符合國際認證標準的頂級品質"
-      },
-      "sustainable": {
-        "title": "永續發展",
-        "description": "環保永續的採購與生產方式"
+      "description": "我們從雲南高原（海拔2800～3400公尺）的香格里拉，以純淨品質將天然香料和植物精華帶到日本市場。",
+      "features": {
+        "direct": {
+          "title": "直接採購",
+          "description": "從雲南自營種植基地直接採購高品質原料"
+        },
+        "expertise": {
+          "title": "專業知識",
+          "description": "25年以上的天然原料貿易經驗與專業知識"
+        },
+        "quality": {
+          "title": "品質保證",
+          "description": "符合國際認證標準，確保產品品質與安全"
+        }
       }
     },
     "background": {
       "title": "成立背景",
-      "experience": "25年以上的國際貿易經驗",
-      "tokyo": "東京總部負責日本市場的業務拓展與客戶服務"
+      "experience": {
+        "title": "25年以上的國際貿易經驗",
+        "description": "集團母公司雲南森美達生物科技股份有限公司擁有20年以上的天然香料原料經驗。"
+      },
+      "tokyo": {
+        "title": "東京總部",
+        "description": "FVNIX有限公司設立於東京，專注日本市場的業務拓展與客戶服務。"
+      }
     },
     "mission": {
       "title": "我們的使命",
-      "quote": "豐富的自然資源 × 現代加工技術",
-      "description": "我們的使命是將雲南大自然的恩惠帶到日本，為客戶提供高品質的天然原料。"
+      "description": "我們的使命是將雲南大自然的恩惠帶到日本市場，結合豐富的自然資源與現代加工技術，為客戶提供最高品質的天然原料。"
     },
     "strengths": {
       "title": "我們的優勢",
-      "supply": {
-        "title": "直接生產基地供應鏈",
-        "description": "擁有自營種植基地的直接供應鏈體系"
-      },
-      "traceability": {
-        "title": "高度可追溯性與品質控制",
-        "description": "從原料到成品的完整追蹤系統"
-      },
-      "trading": {
-        "title": "25年以上的國際貿易實績",
-        "description": "每年服務約100家海外客戶"
+      "items": {
+        "vertical": {
+          "title": "垂直整合供應鏈",
+          "description": "從種植、萃取、精煉到銷售，集團內一貫管理確保品質與供應穩定性。"
+        },
+        "certified": {
+          "title": "國際認證與品質保證",
+          "description": "榮獲ISO 9001、HACCP、cGMP等多項國際認證，嚴格品質管理。"
+        },
+        "market": {
+          "title": "豐富的市場經驗",
+          "description": "25年以上的國際貿易實績，每年服務100家以上的海外客戶。"
+        }
       }
     },
     "business": {
       "title": "事業支柱",
       "brand": {
         "title": "原創品牌",
-        "premium": "頂級系列",
-        "traceability": "完整可追溯性",
-        "value": "高附加價值產品"
+        "items": {
+          "oils": "精油：尤加利、玫瑰、桂花等高品質精油",
+          "health": "健康美容食品：核桃油、堅果零食",
+          "coffee": "特色咖啡：雲南高原阿拉比卡咖啡",
+          "flowers": "高級鮮花：新鮮切花"
+        }
       },
       "b2b": {
         "title": "B2B解決方案",
-        "materials": "豐富原料",
-        "standards": "日本品質標準",
-        "pricing": "具競爭力的價格"
+        "items": {
+          "custom": "客製化產品開發",
+          "private": "自有品牌（PB）生產",
+          "bulk": "大宗原料供應",
+          "consulting": "技術諮詢服務"
+        }
       }
     },
     "categories": {
       "title": "產品類別",
       "oils": {
         "title": "精油",
-        "items": "尤加利、玫瑰、桂花ABS"
+        "description": "尤加利、玫瑰、桂花ABS等高品質天然精油"
       },
       "health": {
         "title": "健康美容食品",
-        "items": "核桃油與零食"
+        "description": "核桃油、堅果零食等健康食品"
       },
       "coffee": {
         "title": "特色咖啡",
-        "items": "高原阿拉比卡咖啡"
+        "description": "來自雲南高原的阿拉比卡咖啡豆"
       },
       "flowers": {
         "title": "高級鮮花",
-        "items": "鮮切花"
+        "description": "新鮮切花，適合各種場合"
       }
     },
-    "contact": {
-      "title": "聯繫方式",
-      "person": "負責人：葉維舟",
-      "tel": "電話：+81-3-6914-3633",
-      "mobile": "手機：+81-80-4363-2780",
-      "email": "電郵：info@fvnix.com",
-      "website": "網站：www.fvnix.com",
-      "address": "地址：〒171-0033 東京都豐島區高田3-16-4 Golje大樓6樓",
-      "cta": "索取樣品或報價"
+    "cta": {
+      "title": "聯繫我們",
+      "description": "歡迎隨時與我們的東京辦公室聯繫，索取產品資訊或樣品。",
+      "buttons": {
+        "products": "查看產品",
+        "contact": "聯繫我們"
+      },
+      "office": {
+        "title": "東京辦公室",
+        "address": "〒171-0033 東京都豐島區高田3-16-4 Golje大樓6樓",
+        "contact": "負責人：葉維舟",
+        "phone": "📞 電話：+81-3-6914-3633",
+        "mobile": "📱 手機：+81-80-4363-2780",
+        "email": "📧 info@fvnix.com",
+        "website": "🌐 www.fvnix.com"
+      }
     }
   },
   "certifications": {

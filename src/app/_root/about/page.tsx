@@ -209,37 +209,37 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           <h2 className="text-4xl font-bold mb-12 text-center" style={{color: 'var(--color-text-primary)'}}>{t("categories.title")}</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-warm-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border-2" style={{borderColor: 'var(--color-warm-gray)'}}>
+            <a href={`/${locale}/products`} className="bg-warm-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all transform hover:scale-105 border-2 cursor-pointer" style={{borderColor: 'var(--color-warm-gray)'}}>
               <div className="text-4xl mb-3 text-center">🌺</div>
               <h3 className="text-xl font-bold mb-2 text-center" style={{color: 'var(--color-text-primary)'}}>{t("categories.oils.title")}</h3>
               <p className="text-sm text-center" style={{color: 'var(--color-text-muted)'}}>
                 {t("categories.oils.description")}
               </p>
-            </div>
+            </a>
 
-            <div className="bg-warm-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border-2" style={{borderColor: 'var(--color-warm-gray)'}}>
+            <a href={`/${locale}/products`} className="bg-warm-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all transform hover:scale-105 border-2 cursor-pointer" style={{borderColor: 'var(--color-warm-gray)'}}>
               <div className="text-4xl mb-3 text-center">💊</div>
               <h3 className="text-xl font-bold mb-2 text-center" style={{color: 'var(--color-text-primary)'}}>{t("categories.health.title")}</h3>
               <p className="text-sm text-center" style={{color: 'var(--color-text-muted)'}}>
                 {t("categories.health.description")}
               </p>
-            </div>
+            </a>
 
-            <div className="bg-warm-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border-2" style={{borderColor: 'var(--color-warm-gray)'}}>
+            <a href={`/${locale}/products`} className="bg-warm-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all transform hover:scale-105 border-2 cursor-pointer" style={{borderColor: 'var(--color-warm-gray)'}}>
               <div className="text-4xl mb-3 text-center">☕</div>
               <h3 className="text-xl font-bold mb-2 text-center" style={{color: 'var(--color-text-primary)'}}>{t("categories.coffee.title")}</h3>
               <p className="text-sm text-center" style={{color: 'var(--color-text-muted)'}}>
                 {t("categories.coffee.description")}
               </p>
-            </div>
+            </a>
 
-            <div className="bg-warm-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border-2" style={{borderColor: 'var(--color-warm-gray)'}}>
+            <a href={`/${locale}/products`} className="bg-warm-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all transform hover:scale-105 border-2 cursor-pointer" style={{borderColor: 'var(--color-warm-gray)'}}>
               <div className="text-4xl mb-3 text-center">🌸</div>
               <h3 className="text-xl font-bold mb-2 text-center" style={{color: 'var(--color-text-primary)'}}>{t("categories.flowers.title")}</h3>
               <p className="text-sm text-center" style={{color: 'var(--color-text-muted)'}}>
                 {t("categories.flowers.description")}
               </p>
-            </div>
+            </a>
           </div>
         </div>
       </section>
