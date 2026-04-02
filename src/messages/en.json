@@ -83,7 +83,8 @@
         "phone": "📞 TEL: +81-3-6914-3633",
         "mobile": "📱 Mobile: +81-80-4363-2780",
         "email": "📧 info@fvnix.com",
-        "website": "🌐 www.fvnix.com"
+        "website": "🌐 www.fvnix.com",
+        "fax": "FAX：03-6457-3368"
       }
     }
   },
@@ -108,7 +109,11 @@
       "herbal": "🌿 Herbal Essential Oils",
       "woody": "🌲 Woody Essential Oils",
       "spicy": "🌶️ Spicy Essential Oils",
-      "resinous": "🍯 Resinous Essential Oils"
+      "resinous": "🍯 Resinous Essential Oils",
+      "coffee": "Coffee",
+      "flowers": "Floral",
+      "health": "Health",
+      "oils": "Essential Oils"
     },
     "contact": {
       "title": "Contact Information",
@@ -131,6 +136,11 @@
       "pure": "🏔️ Pure & Natural",
       "quality": "✨ High Quality",
       "sustainable": "🌿 Sustainable"
+    },
+    "groupCompany": {
+      "description": "Real estate services (rental, sales, management, vacation rental)",
+      "name": "KANAE Co., Ltd.",
+      "title": "Group Company"
     }
   },
   "products": {
@@ -142,9 +152,40 @@
       "origin": "Origin",
       "altitude": "Altitude",
       "extraction": "Extraction",
-      "results": "Results"
+      "results": "Results",
+      "requestSample": "Request Sample",
+      "viewDetails": "View Details"
     },
-    "noResults": "No products found. Try adjusting your filters or search keywords."
+    "noResults": "No products found. Try adjusting your filters or search keywords.",
+    "filters": {
+      "allMethods": "All Methods",
+      "allOrigins": "All Origins",
+      "allSeries": "All Series",
+      "clear": "Clear Filters",
+      "extraction": "Extraction Method",
+      "origin": "Origin",
+      "search": "Search products",
+      "series": "Series",
+      "tags": "特徴タグ",
+      "title": "Filters"
+    },
+    "series": {
+      "citrus": "柑橘系精油",
+      "floral": "フローラル系精油",
+      "herbal": "ハーブ系精油",
+      "resinous": "樹脂系精油",
+      "spicy": "スパイス系精油",
+      "woody": "ウッディ系精油"
+    },
+    "grid": {
+      "noResults": "No products found",
+      "showing": "Showing",
+      "total": "products"
+    },
+    "pagination": {
+      "next": "Next",
+      "prev": "Previous"
+    }
   },
   "documents": {
     "hero": {
@@ -153,10 +194,25 @@
     },
     "card": {
       "product": "Product",
-      "lot": "LOT"
+      "lot": "LOT",
+      "download": "Download"
     },
     "results": "Results",
-    "noResults": "No documents found. Try adjusting your filters or search keywords."
+    "noResults": "No documents found. Try adjusting your filters or search keywords.",
+    "filters": {
+      "clear": "Clear",
+      "lot": "Lot Number",
+      "product": "Product",
+      "search": "Search documents",
+      "type": "Document Type"
+    },
+    "types": {
+      "COA": "Certificate of Analysis",
+      "GCMS": "GC/MS Analysis Report",
+      "MSDS": "Material Safety Data Sheet",
+      "SDS": "Safety Data Sheet",
+      "TDS": "Technical Data Sheet"
+    }
   },
   "request": {
     "hero": {
@@ -333,5 +389,119 @@
     "documentsTitle": "Documents by Lot",
     "lot": "LOT",
     "notFound": "Not Found"
+  },
+  "about": {
+    "background": {
+      "experience": {
+        "description": "With years of experience in the natural ingredients industry, we have built strong relationships with producers worldwide.",
+        "title": "Industry Experience"
+      },
+      "title": "Our Background",
+      "tokyo": {
+        "description": "Operating from Tokyo, we connect Japanese and Asian markets with premium natural ingredient suppliers globally.",
+        "title": "Tokyo-Based Global Operations"
+      }
+    },
+    "business": {
+      "b2b": {
+        "items": {
+          "bulk": "Bulk Supply",
+          "consulting": "Consulting",
+          "custom": "Custom Blending",
+          "private": "Private Label"
+        },
+        "title": "B2B Solutions"
+      },
+      "brand": {
+        "items": {
+          "coffee": "Coffee Products",
+          "flowers": "Floral Products",
+          "health": "Health Products",
+          "oils": "Essential Oils"
+        },
+        "title": "Brand Products"
+      },
+      "title": "Our Business"
+    },
+    "categories": {
+      "coffee": {
+        "description": "Premium single-origin and blended coffee beans sourced from top growing regions worldwide.",
+        "title": "Coffee"
+      },
+      "flowers": {
+        "description": "Pure floral essential oils and absolutes, carefully extracted to preserve their natural fragrance.",
+        "title": "Floral"
+      },
+      "health": {
+        "description": "Natural health ingredients including plant extracts, vitamins, and wellness supplements.",
+        "title": "Health"
+      },
+      "oils": {
+        "description": "Premium natural essential oils sourced from around the world, offering exceptional quality and purity.",
+        "title": "Essential Oils"
+      },
+      "title": "Product Categories"
+    },
+    "cta": {
+      "buttons": {
+        "contact": "お問い合わせフォーム",
+        "products": "製品一覧を見る"
+      },
+      "description": "製品に関するご質問、サンプルのご請求、お見積もりなど、お気軽にご連絡ください。",
+      "office": {
+        "address": "東京都豊島区高田3-16-4 Golje Bld.6F",
+        "contact": "担当：葉 維舟（イエ・ウェイジョウ）",
+        "email": "メール：info@fvnixl.com",
+        "fax": "FAX：03-6457-3368",
+        "phone": "電話：03-6914-3633",
+        "title": "東京オフィス",
+        "website": "Http://www.fvnix.com"
+      },
+      "title": "お気軽にお問い合わせください"
+    },
+    "hero": {
+      "subtitle": "雲南高原の天然資源を日本市場へ",
+      "tagline": "Enriching the World with the Power of Nature",
+      "title": "会社概要"
+    },
+    "message": {
+      "description": "FVNIX合同会社は、雲南省の豊かな天然資源と日本市場を結ぶ架け橋として、高品質な精油・植物エキスをお届けしています。",
+      "features": {
+        "direct": {
+          "description": "親会社である雲南森美達生物科技股份有限公司から直接仕入れることで、高品質を保ちながらコスト競争力のある価格を実現しています。",
+          "title": "直接取引の強み"
+        },
+        "expertise": {
+          "description": "天然原料に精通した専門スタッフが、製品選定から技術サポートまで、日本語で丁寧に対応いたします。",
+          "title": "専門知識とサポート"
+        },
+        "quality": {
+          "description": "すべての製品に完全なトレーサビリティと品質証明書を提供。安心してご利用いただけます。",
+          "title": "品質への こだわり"
+        }
+      },
+      "title": "私たちのメッセージ"
+    },
+    "mission": {
+      "description": "We bridge the world's finest natural ingredients with Japanese quality standards, creating value for our customers and partners.",
+      "title": "Our Mission"
+    },
+    "strengths": {
+      "items": {
+        "certified": {
+          "description": "ISO 9001、HACCP、cGMP完備",
+          "title": "国際認証取得済み"
+        },
+        "market": {
+          "description": "主要精油で世界市場をリード",
+          "title": "世界トップシェア"
+        },
+        "vertical": {
+          "description": "栽培から製品化まで一貫管理",
+          "title": "垂直統合サプライチェーン"
+        }
+      },
+      "title": "私たちの強み"
+    }
   }
 }
