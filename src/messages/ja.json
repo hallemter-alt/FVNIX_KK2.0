@@ -19,7 +19,8 @@
   "about": {
     "hero": {
       "title": "会社概要",
-      "subtitle": "雲南高原の天然資源を日本市場へ"
+      "subtitle": "雲南高原の天然資源を日本市場へ",
+      "tagline": "天然の力で、世界を豊かに"
     },
     "message": {
       "title": "私たちのメッセージ",
@@ -143,7 +144,8 @@
       "clear": "フィルタをクリア",
       "allSeries": "すべてのシリーズ",
       "allOrigins": "すべての原産地",
-      "allMethods": "すべての抽出方法"
+      "allMethods": "すべての抽出方法",
+      "title": "フィルター"
     },
     "series": {
       "floral": "フローラル系精油",
@@ -161,7 +163,16 @@
       "requestSample": "サンプル請求",
       "results": "検索結果"
     },
-    "noResults": "結果が見つかりません。フィルター条件や検索キーワードを変更してお試しください。"
+    "noResults": "結果が見つかりません。フィルター条件や検索キーワードを変更してお試しください。",
+    "grid": {
+      "noResults": "条件に合う商品が見つかりませんでした",
+      "showing": "表示中",
+      "total": "件"
+    },
+    "pagination": {
+      "next": "次へ",
+      "prev": "前へ"
+    }
   },
   "documents": {
     "hero": {
@@ -380,7 +391,11 @@
       "herbal": "🌿 ハーブ系精油",
       "woody": "🌲 ウッディ系精油",
       "spicy": "🌶️ スパイス系精油",
-      "resinous": "🍯 樹脂系精油"
+      "resinous": "🍯 樹脂系精油",
+      "coffee": "コーヒー",
+      "flowers": "フローラル",
+      "health": "ヘルスケア",
+      "oils": "天然精油"
     },
     "contact": {
       "title": "お問い合わせ",
@@ -403,6 +418,11 @@
       "pure": "🏔️ 純粋・天然",
       "quality": "✨ 高品質",
       "sustainable": "🌿 持続可能"
+    },
+    "groupCompany": {
+      "description": "不動産事業（賃貸・売買・管理・民泊運営）",
+      "name": "株式会社KANAE",
+      "title": "グループ会社"
     }
   },
   "home": {
@@ -472,7 +492,8 @@
         "phone": "電話：03-6914-3633",
         "fax": "FAX：03-6457-3368",
         "email": "メール：info@fvnixl.com",
-        "website": "Http://www.fvnix.com"
+        "website": "Http://www.fvnix.com",
+        "mobile": "携帯"
       }
     }
   },

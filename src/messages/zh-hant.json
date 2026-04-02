@@ -83,7 +83,8 @@
         "phone": "電話：03-6914-3633",
         "fax": "傳真：03-6457-3368",
         "email": "郵箱：info@fvnixl.com",
-        "website": "網址：Http://www.fvnix.com"
+        "website": "網址：Http://www.fvnix.com",
+        "mobile": "手機"
       }
     }
   },
@@ -96,9 +97,40 @@
       "origin": "產地",
       "altitude": "海拔",
       "extraction": "萃取方式",
-      "results": "搜尋結果"
+      "results": "搜尋結果",
+      "requestSample": "申請樣品",
+      "viewDetails": "查看詳情"
     },
-    "noResults": "找不到結果。請嘗試調整篩選條件或搜尋關鍵字。"
+    "noResults": "找不到結果。請嘗試調整篩選條件或搜尋關鍵字。",
+    "filters": {
+      "allMethods": "全部萃取方式",
+      "allOrigins": "全部原產地",
+      "allSeries": "全部系列",
+      "clear": "清除篩選",
+      "extraction": "萃取方式",
+      "origin": "原產地",
+      "search": "搜索產品",
+      "series": "系列",
+      "title": "篩選",
+      "tags": "特色標籤"
+    },
+    "grid": {
+      "noResults": "未找到符合條件的產品",
+      "showing": "顯示",
+      "total": "件產品"
+    },
+    "pagination": {
+      "next": "下一頁",
+      "prev": "上一頁"
+    },
+    "series": {
+      "citrus": "柑橘系精油",
+      "floral": "花香系精油",
+      "herbal": "草本系精油",
+      "resinous": "樹脂系精油",
+      "spicy": "香料系精油",
+      "woody": "木質系精油"
+    }
   },
   "documents": {
     "hero": {
@@ -107,10 +139,25 @@
     },
     "card": {
       "product": "產品",
-      "lot": "批次"
+      "lot": "批次",
+      "download": "下載"
     },
     "results": "搜尋結果",
-    "noResults": "找不到文件。請嘗試調整篩選條件或搜尋關鍵字。"
+    "noResults": "找不到文件。請嘗試調整篩選條件或搜尋關鍵字。",
+    "filters": {
+      "clear": "清除",
+      "lot": "批次號",
+      "product": "產品",
+      "search": "搜索文件",
+      "type": "文件類型"
+    },
+    "types": {
+      "COA": "成分分析書",
+      "GCMS": "GC/MS分析報告",
+      "MSDS": "安全數據表",
+      "SDS": "安全數據表",
+      "TDS": "技術數據表"
+    }
   },
   "about": {
     "hero": {
