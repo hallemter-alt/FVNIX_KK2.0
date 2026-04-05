@@ -447,7 +447,16 @@
     "requestQuote": "索取報價",
     "documentsTitle": "批次別技術資料",
     "lot": "批次號碼",
-    "notFound": "找不到產品"
+    "notFound": "找不到產品",
+    "scientificName": "学名",
+    "family": "科属",
+    "partUsed": "提取部位",
+    "origin": "主要产地",
+    "extraction": "提取方法",
+    "characteristics": "植物特征",
+    "history": "历史背景",
+    "components": "成分及功效",
+    "docsAndCerts": "技术与分析报告"
   },
   "footer": {
     "company": {

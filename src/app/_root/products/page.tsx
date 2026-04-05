@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { useSearchParams, useParams } from "next/navigation";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { getLocalizedString, Language } from "@/lib/types";
 import Filters from "@/components/products/Filters";
 import { getAllProducts } from "@/lib/dataService";
 
@@ -109,12 +110,18 @@ function ProductsContent() {
   const params = useParams();
   const locale = (params?.locale as string) || "en";
   const t = useTranslations("products");
+  const lang = locale as Language;
+  const getMixedString = (field: any) => {
+    if (!field) return "-";
+    if (typeof field === "string") return field;
+    return getLocalizedString(field, lang);
+  };
   const all = getAllProducts();
 
   // Generate filter options from existing data
   const seriesValues = all.map((p) => p.series || "");
-  const originValues = all.map((p) => p.origin || "");
-  const extractionValues = all.map((p) => p.extraction || "");
+  const originValues = all.map((p) => typeof p.origin === "string" ? p.origin : (p.origin?.en || ""));
+  const extractionValues = all.map((p) => typeof p.extraction === "string" ? p.extraction : (p.extraction?.en || ""));
   const tagValues = all.flatMap((p) => p.tags || []);
 
   // Read URL query params
@@ -132,8 +139,8 @@ function ProductsContent() {
   const nq = normalize(q);
   const filtered = all.filter((p) => {
     if (series && p.series !== series) return false;
-    if (origin && p.origin !== origin) return false;
-    if (extraction && p.extraction !== extraction) return false;
+    if (origin && (typeof p.origin === "string" ? p.origin : (p.origin?.en || "")) !== origin) return false;
+    if (extraction && (typeof p.extraction === "string" ? p.extraction : (p.extraction?.en || "")) !== extraction) return false;
     
     // ✅ Multi-select tags (OR logic)
     if (selectedTags.length) {
@@ -149,10 +156,10 @@ function ProductsContent() {
           p.name.zh,
           p.name.ja,
           p.latinName,
-          p.notes,
+          typeof p.notes === "string" ? p.notes : (p.notes?.en || ""),
           p.series,
-          p.origin,
-          p.extraction,
+          typeof p.origin === "string" ? p.origin : (p.origin?.en || ""),
+          typeof p.extraction === "string" ? p.extraction : (p.extraction?.en || ""),
           ...(p.tags || []),
         ]
           .filter(Boolean)
@@ -208,7 +215,7 @@ function ProductsContent() {
                   {p.latinName}
                 </div>
                 <div className={`mt-3 text-xs ${categoryStyle.textColor} opacity-70`}>
-                  {t("card.origin")}: {p.origin} · {t("card.altitude")}: {p.altitude} · {t("card.extraction")}: {p.extraction}
+                  {t("card.origin")}: {getMixedString(p.origin)} · {t("card.altitude")}: {p.altitude} · {t("card.extraction")}: {getMixedString(p.extraction)}
                 </div>
 
                 {p.tags?.length ? (

@@ -502,6 +502,15 @@
     "requestQuote": "お見積もりのご依頼",
     "documentsTitle": "ロット別技術資料",
     "lot": "ロット番号",
-    "notFound": "製品が見つかりません"
+    "notFound": "製品が見つかりません",
+    "scientificName": "学名",
+    "family": "科目",
+    "partUsed": "抽出部位",
+    "origin": "主な産地",
+    "extraction": "抽出方法",
+    "characteristics": "植物の特徴",
+    "history": "歴史的背景",
+    "components": "構成成分の効果・効能・作用",
+    "docsAndCerts": "技術・分析レポート"
   }
 }

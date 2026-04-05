@@ -388,7 +388,16 @@
     "requestQuote": "Request Quote",
     "documentsTitle": "Documents by Lot",
     "lot": "LOT",
-    "notFound": "Not Found"
+    "notFound": "Not Found",
+    "scientificName": "Scientific Name",
+    "family": "Family",
+    "partUsed": "Part Used",
+    "origin": "Origin",
+    "extraction": "Extraction Method",
+    "characteristics": "Plant Characteristics",
+    "history": "Historical Background",
+    "components": "Effect & Efficacy of Components",
+    "docsAndCerts": "Technical & Analytical Reports"
   },
   "about": {
     "hero": {
