@@ -43,9 +43,7 @@ export default function Navigation() {
             <Link href={`/${locale}/certifications`} className="font-medium transition-colors text-sm tracking-wide hover:opacity-80" style={{color: 'var(--color-nav-text)', fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif"}}>
               {t("certifications")}
             </Link>
-            <Link href={`/${locale}/market-position`} className="font-medium transition-colors text-sm tracking-wide hover:opacity-80" style={{color: 'var(--color-nav-text)', fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif"}}>
-              {t("marketPosition")}
-            </Link>
+            
             <Link 
               href={`/${locale}/request`}
               className="rounded-lg px-5 py-2 font-semibold hover:opacity-90 transition-all text-sm tracking-wide border border-white/30" style={{backgroundColor: 'rgba(255,255,255,0.15)', color: 'var(--color-nav-text)', fontFamily: "'Montserrat', 'Noto Sans JP', sans-serif"}}
@@ -112,13 +110,7 @@ export default function Navigation() {
               >
                 {t("certifications")}
               </Link>
-              <Link 
-                href={`/${locale}/market-position`}
-                className="text-gray-700 hover:text-green-600 font-medium transition-colors py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t("marketPosition")}
-              </Link>
+              
               <Link 
                 href={`/${locale}/request`}
                 className="rounded-lg bg-gradient-to-r from-green-600 to-green-700 px-4 py-3 text-white font-semibold hover:from-green-700 hover:to-green-800 transition-all shadow-md text-center mt-2"

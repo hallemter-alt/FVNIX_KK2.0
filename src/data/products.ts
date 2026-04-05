@@ -1,16 +1,33 @@
 import { Product } from "@/lib/types";
 
 export const products: Product[] = [
-  {
+    {
     slug: "lavender",
     name: { en: "Lavender", zh: "薰衣草", ja: "ラベンダー" },
     latinName: "Lavandula angustifolia",
+    family: { en: "Lamiaceae", zh: "唇形科", ja: "シソ科" },
+    partUsed: { en: "Flowers", zh: "花朵", ja: "花" },
     series: "Floral",
-    origin: "Yunnan · Shangri-La",
+    origin: { en: "Yunnan · Shangri-La", zh: "云南 · 香格里拉", ja: "雲南省 · シャングリラ" },
     altitude: "2800–3400m",
-    extraction: "Steam Distillation",
-    notes: "Soft floral, clean, slightly herbaceous",
+    extraction: { en: "Steam Distillation", zh: "水蒸气蒸馏", ja: "水蒸気蒸留" },
+    notes: { en: "Soft floral, clean, slightly herbaceous", zh: "柔和的花香，洁净，微带草本气息", ja: "柔らかいフローラル、清潔感、わずかにハーブ" },
     tags: ["relax", "spa", "floral"],
+    characteristics: {
+      en: "Grown in the high altitudes of Shangri-La, our lavender benefits from intense sunlight and pure glacial water, resulting in an exceptionally clean and relaxing aroma profile.",
+      zh: "生长在香格里拉的高海拔地区，我们的薰衣草受益于强烈的阳光和纯净的冰川水，带来异常纯净和放松的香气。",
+      ja: "シャングリラの高地で栽培された私たちのラベンダーは、強い日差しと純粋な氷河水の恩恵を受け、非常に清潔でリラックスできる香りのプロファイルを生み出します。"
+    },
+    components: [
+      {
+        name: { en: "Linalool", zh: "芳樟醇", ja: "リナロール" },
+        desc: { en: "Known for its calming and anti-anxiety effects.", zh: "以其镇静和抗焦虑作用而闻名。", ja: "鎮静作用と抗不安作用で知られています。" }
+      },
+      {
+        name: { en: "Linalyl acetate", zh: "乙酸芳樟酯", ja: "酢酸リナリル" },
+        desc: { en: "Contributes to the sweet, floral aroma and has soothing properties.", zh: "带有甜美的花香，具有舒缓的特性。", ja: "甘いフローラルの香りに貢献し、鎮静特性を持っています。" }
+      }
+    ]
   },
   {
     slug: "sweet-orange",
@@ -402,3 +419,4 @@ export function getAllTags(): string[] {
   const tagsSet = new Set(products.flatMap(p => p.tags || []));
   return Array.from(tagsSet).sort();
 }
+

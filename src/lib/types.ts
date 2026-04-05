@@ -22,24 +22,34 @@ export type Product = {
   slug: string
   name: LangString
   latinName?: string
+  family?: LangString  // 科名
+  partUsed?: LangString // 抽出部位
   series?: string      // e.g. Citrus / Woody / Floral
-  origin?: string      // e.g. Yunnan / Shangri-La
+  origin?: string | LangString      // e.g. Yunnan / Shangri-La
   altitude?: string    // e.g. 2500–3500m
-  extraction?: string  // Steam / Cold press
-  notes?: string       // Aroma profile
+  extraction?: string | LangString  // Steam / Cold press
+  notes?: string | LangString       // Aroma profile
   tags?: string[]
+  characteristics?: LangString // 植物の特徴
+  history?: LangString // 歴史的背景
+  components?: Array<{ name: LangString, desc: LangString }> // 構成成分
 }
 
 export const ProductSchema = z.object({
   slug: z.string(),
   name: LangStringSchema,
   latinName: z.string().optional(),
+  family: LangStringSchema.optional(),
+  partUsed: LangStringSchema.optional(),
   series: z.string().optional(),
-  origin: z.string().optional(),
+  origin: z.union([z.string(), LangStringSchema]).optional(),
   altitude: z.string().optional(),
-  extraction: z.string().optional(),
-  notes: z.string().optional(),
+  extraction: z.union([z.string(), LangStringSchema]).optional(),
+  notes: z.union([z.string(), LangStringSchema]).optional(),
   tags: z.array(z.string()).optional(),
+  characteristics: LangStringSchema.optional(),
+  history: LangStringSchema.optional(),
+  components: z.array(z.object({ name: LangStringSchema, desc: LangStringSchema })).optional(),
 })
 
 /**

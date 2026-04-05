@@ -47,11 +47,7 @@ export default function Footer() {
                   {t("quickLinks.certifications")}
                 </Link>
               </li>
-              <li>
-                <Link href={`/${locale}/market-position`} className="text-sm hover:text-green-400 transition-colors">
-                  {t("quickLinks.marketPosition")}
-                </Link>
-              </li>
+              
               <li>
                 <Link href={`/${locale}/request`} className="text-sm hover:text-green-400 transition-colors">
                   {t("quickLinks.contact")}
