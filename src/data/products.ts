@@ -402,3 +402,4 @@ export function getAllTags(): string[] {
   const tagsSet = new Set(products.flatMap(p => p.tags || []));
   return Array.from(tagsSet).sort();
 }
+
